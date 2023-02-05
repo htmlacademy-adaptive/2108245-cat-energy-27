@@ -1,0 +1,42 @@
+.map {
+  background-color: $color-white-smoke;
+
+  &--index {
+    background-color: transparent;
+  }
+}
+
+.map__description-wrapper {
+  display: grid;
+  width: 100%;
+  min-width: $vp-mobile;
+  margin: 0 auto;
+  padding: 26px 20px;
+
+  gap: 2px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.map__description {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.map__address {
+  margin: 0;
+
+  font-style: normal;
+  line-height: 20px;
+}
+
+.map__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+}

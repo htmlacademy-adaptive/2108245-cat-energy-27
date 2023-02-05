@@ -1,0 +1,33 @@
+.button {
+  display: block;
+  padding: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-apple;
+  border: none;
+}
+
+.button-pagination {
+  display: block;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: $color-charcoal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-white-smoke;
+  border: none;
+}

@@ -1,0 +1,49 @@
+.programs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.programs__item {
+  padding: 21px 20px 18px 20px;
+
+  background-color: $color-white-smoke;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 18px 0 14px 69px;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-transform: uppercase;
+}
+
+.programs__description {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
+
+  border-bottom: 1px solid $color-gainsboro;
+}
+
+.programs__link {
+  display: block;
+  padding-right: 39px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color-default-black;
+  text-transform: uppercase;
+  text-decoration: none;
+}

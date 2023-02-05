@@ -1,0 +1,45 @@
+.form-page {
+  padding-top: 27px;
+  padding-bottom: 32px;
+}
+
+.form-page__title {
+  margin-bottom: 37px;
+}
+
+.form-page__description {
+  margin: 0;
+  margin-bottom: 17px;
+  padding-right: 20%;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+
+.form-page__group {
+  border: none;
+  border-bottom: 1px solid $color-gainsboro;
+
+  &--without-border {
+    border: none;
+  }
+}
+
+.form-page__submit-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 9px;
+}
+
+.form-page__submit-button {
+  margin-bottom: 21px;
+}
+
+.form-page__submit-description {
+  line-height: 16px;
+  text-align: center;
+  color: $color-default-black;
+}

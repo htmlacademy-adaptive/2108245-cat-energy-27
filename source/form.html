@@ -2,136 +2,195 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css">
-  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous" />
   <title>Магазин питания для котиков "Кэт энерджи"</title>
 </head>
 
 <body>
-
-  <div class="header-container container">
-
+  <div class="container">
     <header class="header no-js">
       <div class="header__logo-wrapper">
-        <span class="header__logo-link">
+        <a class="header__logo-link" href="index.html" target="_blank"
+          aria-label="Переход на главную страницу магазина.">
           <img class="header__logo-icon" src="img/svg/logo-mobile.svg" width="33" height="38"
-            alt="Логотип сайта магазина Кетэнерджи.">
-        </span>
-        <span class="header__logo-link header__logo-link--text">
+            alt="Логотип сайта магазина Кетэнерджи." />
+        </a>
+        <a class="header__logo-link header__logo-link--text" href="index.html" target="_blank"
+          aria-label="Переход на главную страницу магазина.">
           <img class="header__logo-image" src="img/svg/logo-text.svg" width="101" height="18"
-            alt="Логотип сайта магазина Кетэнерджи.">
-        </span>
+            alt="Логотип сайта магазина Кетэнерджи." />
+        </a>
       </div>
       <nav class="header__nav nav">
         <button class="nav__toggle" type="button" aria-label="Открыть/закрыть меню."></button>
         <ul class="nav__list">
-          <li class="nav__item"><span class="nav__link">Главная</span></li>
-          <li class="nav__item"><a class="nav__link" href="catalog.html" target="_blank">Каталог продукции</a></li>
-          <li class="nav__item"><a class="nav__link" href="form.html" target="_blank">Подбор программы</a></li>
+          <li class="nav__item">
+            <a class="nav__link" href="index.html" target="_blank">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html" target="_blank">Каталог продукции</a>
+          </li>
+          <li class="nav__item">
+            <span class="nav__link">Подбор программы</span>
+          </li>
         </ul>
       </nav>
     </header>
-
-    <h1 class="visually-hidden">Главная страница магазина Cat-energy.</h1>
-
-    <section class="intro">
-      <div class="intro__wrapper">
-        <h2 class="intro__title main-title">Функциональное питание для котов</h2>
-        <p class="intro__slogan">Занялся собой? Займись котом!</p>
-      </div>
-      <a class="intro__link button" href="form.html" target="_blank">Подобрать программу</a>
-      <img class="intro__image" src="img/index-can-mobile.png" width="280" height="270"
-        alt="Банка Кетэнерджи со вкусом курицы.">
-    </section>
-
   </div>
 
   <main class="main-content">
+    <h1 class="visually-hidden">
+      Страница подбора программы для вашего кота в магазине Cat-energy.
+    </h1>
 
-    <section class="main-content__programs programs container">
-      <h2 class="visually-hidden">Варианты продуктов в зависимости от цели.</h2>
-      <ul class="programs__list">
-        <li class="programs__item">
-          <h3 class="programs__title">Похудение</h3>
-          <p class="programs__description text">Ваш кот весит больше собаки и&nbsp;почти утратил способность лазить
-            по&nbsp;деревьям? Пора на&nbsp;диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="programs__link" href="#" target="_blank">Каталог slim</a>
-        </li>
-        <li class="programs__item">
-          <h3 class="programs__title">Набор массы</h3>
-          <p class="programs__description text">Заработать авторитет среди дворовых котов и&nbsp;даже собак? Серия Cat
-            Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="programs__link" href="#" target="_blank">Каталог pro</a>
-        </li>
-      </ul>
-    </section>
+    <section class="main-content__form-page form-page container">
+      <h2 class="form-page__title main-title">Подбор программы</h2>
+      <p class="form-page__description">
+        Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего
+        кота
+      </p>
 
-    <section class="main-content__advantages advantages container">
-      <h2 class="advantages__title index-sub-title">Как это работает</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <p class="advantages__description text">Функциональное питание содержит только полезные питательные вещества.
+      <form class="form-page__form" method="POST" action="https://echo.htmlacademy.ru">
+        <fieldset class="form-page__group user-data">
+          <legend class="visually-hidden">Введите данные вашего кота.</legend>
+          <div class="user-data__input-container">
+            <label class="user-data__input-name input-text" for="cat-name">Имя:*</label>
+            <input class="user-data__input input-text" type="text" id="cat-name" name="name" value="Барсик"
+              placeholder="Введите имя кота" required />
+          </div>
+          <div class="user-data__input-container">
+            <label class="user-data__input-name input-text" for="cat-weight">Вес (кг):*</label>
+            <input class="user-data__input input-text" type="number" id="cat-weight" name="weight" value="7"
+              placeholder="Введите вес кота" required />
+          </div>
+          <div class="user-data__input-container">
+            <label class="user-data__input-name input-text" for="cat-age">Имя*:</label>
+            <input class="user-data__input input-text" type="number" id="cat-age" name="age" value="7"
+              placeholder="Введите возраст кота" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="form-page__group user-goal">
+          <legend class="visually-hidden">
+            Выберите желаемую программу.
+          </legend>
+          <ul class="user-goal__list">
+            <li class="user-goal__item">
+              <label class="user-goal__input-label">
+                <input class="visually-hidden user-goal__input" type="radio" id="slimming" name="user-goal"
+                  value="Похудение" checked />
+                <span class="user-goal__input-radio"></span>
+                <span class="user-goal__input-name input-text">Похудение</span></label>
+            </li>
+            <li class="user-goal__item">
+              <label class="user-goal__input-label">
+                <input class="visually-hidden user-goal__input" type="radio" id="weight-gain" name="user-goal"
+                  value="Набор массы" />
+                <span class="user-goal__input-radio"></span>
+                <span class="user-goal__input-name input-text">Набор массы</span></label>
+            </li>
+            <li class="user-goal__item">
+              <label class="user-goal__input-label">
+                <input class="visually-hidden user-goal__input" type="radio" id="need-consultation" name="user-goal"
+                  value="Не знаю (нужен ваш совет)" />
+                <span class="user-goal__input-radio"></span>
+                <span class="user-goal__input-name input-text">Не знаю (нужен ваш совет)</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="form-page__group user-data user-data--with-legend">
+          <legend class="user-data__legend sub-title">
+            Контактные данные (владельца кота)
+          </legend>
+          <div class="user-data__input-container">
+            <label class="user-data__input-name input-text" for="email">E-mail:*</label>
+            <input class="user-data__input user-data__input--icon-email input-text" type="email" id="email" name="email"
+              value="kuklachev@gmail.com" placeholder="Введите ваш email" required />
+          </div>
+          <div class="user-data__input-container">
+            <label class="user-data__input-name input-text" for="phone">Телефон:*</label>
+            <input class="user-data__input user-data__input--icon-phone input-text" type="tel" id="phone" name="phone"
+              value="8 (960) 900-60-90" placeholder="Введите ваш email" required />
+          </div>
+        </fieldset>
+
+        <fieldset class="form-page__group form-page__group--without-border user-data user-data--with-legend">
+          <legend class="user-data__legend sub-title">Комментарий</legend>
+          <textarea class="user-data__input user-data__input--textarea input-text" id="additional-text"
+            name="additional-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </fieldset>
+
+        <fieldset
+          class="form-page__group form-page__group--without-border user-optional user-data user-data--with-legend">
+          <legend class="user-optional__legend sub-title">
+            Дополнительно:
+          </legend>
+          <ul class="user-optional__list">
+            <li class="user-optional__item">
+              <label class="user-optional__input-label">
+                <input class="visually-hidden user-optional__input" type="checkbox" name="additional-options"
+                  id="sweetener" value="Сахарозаменитель" checked />
+                <span class="user-optional__input-checkbox"></span>
+                <span class="user-optional__input-name input-text">Сахарозаменитель</span></label>
+            </li>
+            <li class="user-optional__item">
+              <label class="user-optional__input-label">
+                <input class="visually-hidden user-optional__input" type="checkbox" name="additional-options" id="water"
+                  value="Питьевая вода" />
+                <span class="user-optional__input-checkbox"></span>
+                <span class="user-optional__input-name input-text">Питьевая вода</span></label>
+            </li>
+            <li class="user-optional__item">
+              <label class="user-optional__input-label">
+                <input class="visually-hidden user-optional__input" type="checkbox" name="additional-options" id="milk"
+                  value="Молоко" />
+                <span class="user-optional__input-checkbox"></span>
+                <span class="user-optional__input-name input-text">Молоко</span></label>
+            </li>
+            <li class="user-optional__item">
+              <label class="user-optional__input-label">
+                <input class="visually-hidden user-optional__input" type="checkbox" name="additional-options"
+                  id="vitamins" value="Витамины" />
+                <span class="user-optional__input-checkbox"></span>
+                <span class="user-optional__input-name input-text">Витамины</span></label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <div class="form-page__submit-container">
+          <button class="form-page__submit-button button" type="submit">
+            Отправить заявку
+          </button>
+          <p class="form-page__submit-description text">
+            * &mdash; Обязательные поля
           </p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__description text">Выпускается в&nbsp;виде порошка, который нужно лишь залить кипятком
-            и&nbsp;готово.</p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__description text">Замените один-два приема обычной еды на&nbsp;наше функциональное
-            питание.</p>
-        </li>
-        <li class="advantages__item">
-          <p class="advantages__description text">Уже через месяц наслаждайтесь изменениями к&nbsp;лучшему вашего
-            питомца!</p>
-        </li>
-      </ul>
-    </section>
-
-    <section class="main-content__example example">
-      <div class="container">
-        <h2 class="example__title index-sub-title">Живой пример</h2>
-        <p class="example__text text">Борис сбросил 5&nbsp;кг за&nbsp;2&nbsp;месяца, просто заменив свой обычный корм
-          на&nbsp;Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он&nbsp;не&nbsp;менял своих
-          привычек и&nbsp;по-прежнему спит по&nbsp;16&nbsp;часов в&nbsp;день.</p>
-        <div class="example__list-wrapper">
-          <dl class="example__list">
-            <div class="example__item">
-              <dt class="example__term">Снижение веса</dt>
-              <dd class="example__definition">5 кг</dd>
-            </div>
-            <div class="example__item">
-              <dt class="example__term">Затрачено времени</dt>
-              <dd class="example__definition">60 дней</dd>
-            </div>
-          </dl>
-          <p class="example__cost">Затраты на&nbsp;питание: 15&nbsp;000&nbsp;руб.</p>
         </div>
-        <img class="example__image" src="img/cat-before-mobile.png" width="280" height="256" alt="Толстый кот.">
-        <img class="example__image example__image--after" src="img/cat-after-mobile.png" width="280" height="256"
-          alt="Худой кот.">
-      </div>
+      </form>
     </section>
 
-    <section class="main-content__map map map--index">
+    <section class="main-content__map map">
       <h2 class="visually-hidden">Карта нашего местоположения.</h2>
       <div class="map__description-wrapper">
-        <p class="map__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <address class="map__address text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        <p class="map__description">
+          Приглашаем к&nbsp;сотрудничеству дилеров!
+        </p>
+        <address class="map__address">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </address>
       </div>
-      <img class="map__image" src="img/map-mobile.jpg" width="320" height="352" alt="Карта.">
+      <img class="map__image" src="img/map-mobile.jpg" width="320" height="352" alt="Карта." />
     </section>
-
   </main>
 
   <footer class="footer">
     <div class="container">
       <span class="footer__logo-link">
-        <img class="footer__logo" src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип сайта кетэнерджи.">
+        <img class="footer__logo" src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип сайта кетэнерджи." />
       </span>
       <div class="footer__social-wrapper">
         <ul class="footer__social">
@@ -184,5 +243,6 @@
       </a>
     </div>
   </footer>
-
 </body>
+
+</html>

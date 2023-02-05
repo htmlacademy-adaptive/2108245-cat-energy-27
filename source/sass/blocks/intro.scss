@@ -1,0 +1,80 @@
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro__wrapper {
+  position: relative;
+  z-index: 1;
+
+  order: -1;
+  width: 100%;
+  padding: 27px 0 164px 0;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+
+    width: 100vw;
+    min-width: $vp-mobile;
+    height: 100%;
+
+    background-image: url("../../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+    z-index: -1;
+
+    width: 100vw;
+    min-width: $vp-mobile;
+    height: 100%;
+
+    background-color: rgba($color-apple, 0.85);
+  }
+}
+
+.intro__title {
+  margin-bottom: 25px;
+
+  text-align: center;
+  color: $color-default-white;
+}
+
+.intro__slogan {
+  margin: 0;
+  padding: 0 20px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+}
+
+.intro__image {
+  position: relative;
+  z-index: 2;
+
+  display: block;
+  order: -1;
+  margin: 0 auto;
+  margin-top: -135px;
+  margin-bottom: 3px;
+}
+
+.intro__link {
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+.text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Lato", "Aria", sans-serif;
+  color: $color-charcoal;
+}
+
+.input-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color-charcoal;
+  text-transform: uppercase;
+}

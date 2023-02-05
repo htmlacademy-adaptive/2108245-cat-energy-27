@@ -1,0 +1,79 @@
+.example {
+  padding: 25px 0 40px 0;
+
+  background-color: $color-whisper-2;
+}
+
+.example__title {
+  margin-bottom: 40px;
+}
+
+.example__text {
+  margin-bottom: 20px;
+}
+
+.example__list-wrapper {
+  margin-bottom: 20px;
+}
+
+.example__list {
+  display: grid;
+  margin-bottom: 34px;
+
+  gap: 11%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.example__item {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 15px 16px 15px;
+
+  border: 1px solid $color-very-light-grey;
+  border-radius: 3px;
+}
+
+.example__term {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  width: 80px;
+  height: auto;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Lato", "Arial", sans-serif;
+  text-align: center;
+  color: $color-charcoal;
+
+  background-color: $color-whisper-2;
+  transform: translate(-50%, 50%);
+}
+
+.example__definition {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: $color-default-black;
+  text-transform: uppercase;
+}
+
+.example__cost {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
+  color: $color-default-black;
+  text-transform: uppercase;
+}

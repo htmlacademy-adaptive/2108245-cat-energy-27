@@ -1,0 +1,14 @@
+.container {
+  width: 100%;
+  min-width: $vp-mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 0 110px;
+  }
+}

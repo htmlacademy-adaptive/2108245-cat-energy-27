@@ -1,0 +1,26 @@
+.user-optional__list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.user-optional__item {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 6px 0;
+
+  &:not(:last-child) {
+    margin-bottom: 13px;
+  }
+}
+
+.user-optional__input-label {
+  padding-left: 46px;
+}
+
+.user-optional__input-name {
+  display: block;
+
+  color: $color-default-black;
+}
