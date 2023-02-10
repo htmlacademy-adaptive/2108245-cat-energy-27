@@ -1,18 +1,127 @@
 .advantages__title {
   margin-bottom: 40px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
+  position: relative;
+
   margin: 0;
   padding: 0;
 
   list-style-type: none;
+
+  @media (min-width: $vp-tablet) {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 60px;
+
+    column-gap: 99px;
+
+    counter-reset: css-counter 0;
+
+    grid-template-columns: 284px 324px;
+    row-gap: 37px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: -30px;
+
+      width: calc(100% + 60px);
+      height: 1px;
+
+      background-color: $color-whisper;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding-bottom: 0;
+
+    column-gap: 83px;
+
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+
+    &::before {
+      display: none;
+    }
+  }
 }
 
 .advantages__item {
+  position: relative;
+
+  min-height: 60px;
   padding-left: 80px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: $vp-tablet) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media (min-width: $vp-tablet) {
+    padding: 111px 60px 44px 0;
+
+    counter-increment: css-counter 1;
+
+    &::after {
+      content: counter(css-counter);
+      position: absolute;
+      top: 0;
+      left: 125px;
+      z-index: -1;
+
+      font-size: 280px;
+      line-height: 203px;
+      font-family: $ff-default;
+      color: $color-white-smoke;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding-right: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 60px;
+    height: 60px;
+
+    background-color: $color-apple;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @media (min-width: $vp-tablet) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../img/svg/icon-leaf.svg");
+  }
+
+  &--glass::before {
+    background-image: url("../img/svg/icon-glass.svg");
+  }
+
+  &--eat::before {
+    background-image: url("../img/svg/icon-eat.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../img/svg/icon-clock.svg");
   }
 }

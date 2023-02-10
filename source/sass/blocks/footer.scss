@@ -61,9 +61,9 @@
   justify-content: space-between;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: $fz-default;
   line-height: 19px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $ff-text;
   color: $color-charcoal;
 }
 

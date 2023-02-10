@@ -1,32 +1,50 @@
 .header {
   position: relative;
 
+  display: flex;
   min-height: 65px;
   padding-top: 10px;
-}
 
-.header__logo-wrapper {
-  position: relative;
+  @media (min-width: $vp-tablet) {
+    width: auto;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
 
-  display: flex;
-  width: 100%;
-  padding-bottom: 17px;
+  @media (min-width: $vp-desktop) {
+    padding-top: 53px;
+    padding-bottom: 32px;
+  }
+
+  &.no-js {
+    display: block;
+  }
 }
 
 .header__logo-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
+  width: calc(50% + 52px);
+  margin-bottom: 17px;
 
   text-decoration: none;
 
-  &--text {
-    position: absolute;
-    top: 13px;
-    left: 50%;
+  pointer-events: none;
 
+  @media (min-width: $vp-tablet) {
     width: auto;
-    height: auto;
+    margin-right: 96px;
+    margin-bottom: 0;
+  }
+}
 
-    transform: translateX(-50%);
+.header__logo-image {
+  pointer-events: all;
+
+  &--text {
+    @media (min-width: $vp-tablet) {
+      display: none;
+    }
   }
 }
 
@@ -40,4 +58,205 @@
   height: 1px;
 
   background-color: $color-whisper;
+}
+
+.header__nav-toggle {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  padding: 5px 3px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  .no-js & {
+    display: none;
+  }
+
+  @media (min-width: $vp-tablet) {
+    display: none;
+  }
+}
+
+.header__toggle-line {
+  position: relative;
+
+  display: block;
+  align-self: center;
+  width: 100%;
+  height: 2px;
+
+  background-color: $color-default-black;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    background-color: $color-default-black;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  .is-open & {
+    background-color: transparent;
+
+    &::before,
+    &::after {
+      top: 0;
+      left: 50%;
+
+      width: 26px;
+    }
+
+    &::before {
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateX(-50%) rotate(-45deg);
+    }
+  }
+}
+
+.header__nav {
+  @media (min-width: $vp-tablet) {
+    display: flex;
+    max-width: calc(100% - 268px);
+    margin-left: auto;
+    padding-top: 8px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: 50%;
+    max-width: none;
+    padding-top: 16px;
+    padding-left: 20px;
+  }
+}
+
+.header__nav-list {
+  position: absolute;
+  top: 65px;
+  left: -20px;
+  z-index: 3;
+
+  display: none;
+  width: calc(100% + 40px);
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  font-family: $ff-default;
+  text-transform: uppercase;
+
+  background-color: $color-default-white;
+
+  @media (min-width: $vp-tablet) {
+    position: static;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    column-gap: 34px;
+
+    background-color: transparent;
+
+    row-gap: 10px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-left: auto;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .no-js & {
+    position: static;
+
+    display: block;
+    width: 100%;
+
+    @media (min-width: $vp-tablet) {
+      display: grid;
+    }
+  }
+
+  .is-open & {
+    display: block;
+
+    @media (min-width: $vp-tablet) {
+      position: static;
+
+      display: grid;
+    }
+  }
+}
+
+.header__nav-item {
+  position: relative;
+
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: calc(100% + 40px);
+    height: 1px;
+
+    background-color: $color-whisper;
+
+    @media (min-width: $vp-tablet) {
+      display: none;
+    }
+  }
+}
+
+.header__nav-link {
+  display: block;
+  padding: 22px 20px 24px 20px;
+
+  color: $color-default-black;
+  text-decoration: none;
+
+  @media (min-width: $vp-tablet) {
+    padding: 10px 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    color: $color-default-white;
+  }
+
+  &--current {
+    @media (min-width: $vp-tablet) {
+      border-bottom: 2px solid $color-apple;
+    }
+
+    @media (min-width: $vp-desktop) {
+      border-color: $color-default-white;
+    }
+  }
 }

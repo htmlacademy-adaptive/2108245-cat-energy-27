@@ -52,8 +52,7 @@
   border-bottom: 1px solid $color-very-light-grey;
 }
 
-.sub-catalog__product-link {
-  display: block;
+.sub-catalog__product-title {
   margin-bottom: 13px;
 
   line-height: 16px;
@@ -74,7 +73,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $ff-text;
 }
 
 .sub-catalog__product-tare {

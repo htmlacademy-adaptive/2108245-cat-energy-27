@@ -1,27 +1,100 @@
 .example {
   padding: 25px 0 40px 0;
+  overflow: hidden;
 
   background-color: $color-whisper-2;
+
+  @media (min-width: $vp-tablet) {
+    background-color: transparent;
+    padding: 0 0 101px 0;
+  }
 }
 
 .example__title {
   margin-bottom: 40px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 76px;
+  }
 }
+
+.example__wrapper {
+  @media (min-width: $vp-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.example__content-wrapper {
+  @media (min-width: $vp-desktop) {
+    padding: 70px 70px 75px 0;
+    max-width: 506px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100vw;
+      width: 200vw;
+      height: 100%;
+      background-color: $color-whisper-2;
+      z-index: -1;
+    }
+  }
+}
+
 
 .example__text {
   margin-bottom: 20px;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 69px;
+  }
 }
 
 .example__list-wrapper {
   margin-bottom: 20px;
+
+  @media (min-width: $vp-tablet) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 99px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 0;
+    display: block;
+  }
 }
 
 .example__list {
   display: grid;
-  margin-bottom: 34px;
+  max-width: 320px;
+  margin: 0 auto 34px auto;
 
   gap: 11%;
   grid-template-columns: repeat(2, 1fr);
+
+  @media (min-width: $vp-tablet) {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, 162px);
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 55px;
+  }
 }
 
 .example__item {
@@ -30,6 +103,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 162px;
   padding: 15px 15px 16px 15px;
 
   border: 1px solid $color-very-light-grey;
@@ -47,12 +121,26 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 12px;
-  font-family: "Lato", "Arial", sans-serif;
+  font-family: $ff-text;
   text-align: center;
   color: $color-charcoal;
 
   background-color: $color-whisper-2;
   transform: translate(-50%, 50%);
+
+  @media (min-width: $vp-tablet) {
+    font-size: 14px;
+    line-height: 14px;
+
+    background-color: $color-default-white;
+
+    width: max-content;
+    padding: 9px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    background-color: $color-whisper-2;
+  }
 }
 
 .example__definition {
@@ -61,9 +149,14 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-default-black;
   text-transform: uppercase;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__cost {
@@ -72,8 +165,67 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   text-align: center;
   color: $color-default-black;
   text-transform: uppercase;
+
+  @media (min-width: $vp-tablet) {
+    text-align: right;
+    font-size: 20px;
+    padding-top: 11px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 327px;
+  }
+}
+
+.example__image-container {
+  position: relative;
+
+  @media (min-width: $vp-tablet) {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 151px;
+      left: -100vw;
+      width: 200vw;
+      height: 100%;
+      background-color: $color-whisper-2;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.example__image {
+  position: relative;
+
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: $vp-tablet) {
+    width: 560px;
+    height: 512px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    transform: translateY(-136px);
+  }
+
+  &--after {
+    margin-top: -256px;
+
+    @media (min-width: $vp-tablet) {
+      margin-top: -512px;
+    }
+  }
 }

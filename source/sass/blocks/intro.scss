@@ -1,6 +1,12 @@
 .intro {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $vp-desktop) {
+    position: relative;
+
+    padding-bottom: 188px;
+  }
 }
 
 .intro__wrapper {
@@ -10,6 +16,15 @@
   order: -1;
   width: 100%;
   padding: 27px 0 164px 0;
+
+  @media (min-width: $vp-tablet) {
+    padding: 52px 204px 49px 88px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: 50%;
+    padding: 79px 114px 52px 80px;
+  }
 
 
   &::before {
@@ -27,6 +42,14 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $vp-tablet) {
+      display: none;
+    }
   }
 
   &::after {
@@ -41,6 +64,10 @@
     height: 100%;
 
     background-color: rgba($color-apple, 0.85);
+
+    @media (min-width: $vp-tablet) {
+      display: none;
+    }
   }
 }
 
@@ -49,6 +76,14 @@
 
   text-align: center;
   color: $color-default-white;
+
+  @media (min-width: $vp-tablet) {
+    max-width: 416px;
+    margin-bottom: 41px;
+
+    text-align: left;
+    color: $color-default-black;
+  }
 }
 
 .intro__slogan {
@@ -58,10 +93,37 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;
+
+  @media (min-width: $vp-tablet) {
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $color-default-black;
+  }
+}
+
+.intro__link {
+  order: 1;
+  width: 100%;
+
+  @media (min-width: $vp-tablet) {
+    order: 0;
+    width: auto;
+    max-width: calc(100% - 280px);
+    margin-right: auto;
+    margin-left: 91px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    max-width: calc(50% - 180px);
+    margin-left: 80px;
+  }
 }
 
 .intro__image {
@@ -69,12 +131,23 @@
   z-index: 2;
 
   display: block;
-  order: -1;
-  margin: 0 auto;
-  margin-top: -135px;
-  margin-bottom: 3px;
-}
+  margin: -135px auto 3px auto;
 
-.intro__link {
-  width: 100%;
+  @media (min-width: $vp-tablet) {
+    z-index: -1;
+
+    width: 709px;
+    margin: -83px auto 0 auto;
+  }
+
+  @media (min-width: $vp-desktop) {
+    position: absolute;
+    top: 0;
+    left: 448px;
+    z-index: 1;
+
+    width: 552px;
+    height: auto;
+    margin: 0;
+  }
 }

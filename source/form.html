@@ -7,47 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous" />
-  <title>Магазин питания для котиков "Кэт энерджи"</title>
+  <title>Магазин питания для котиков "Cat Energy"</title>
 </head>
 
 <body>
   <div class="container">
     <header class="header no-js">
-      <div class="header__logo-wrapper">
-        <a class="header__logo-link" href="index.html" target="_blank"
-          aria-label="Переход на главную страницу магазина.">
-          <img class="header__logo-icon" src="img/svg/logo-mobile.svg" width="33" height="38"
-            alt="Логотип сайта магазина Кетэнерджи." />
-        </a>
-        <a class="header__logo-link header__logo-link--text" href="index.html" target="_blank"
-          aria-label="Переход на главную страницу магазина.">
-          <img class="header__logo-image" src="img/svg/logo-text.svg" width="101" height="18"
-            alt="Логотип сайта магазина Кетэнерджи." />
-        </a>
-      </div>
-      <nav class="header__nav nav">
-        <button class="nav__toggle" type="button" aria-label="Открыть/закрыть меню."></button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html" target="_blank">Главная</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="catalog.html" target="_blank">Каталог продукции</a>
-          </li>
-          <li class="nav__item">
-            <span class="nav__link">Подбор программы</span>
-          </li>
+      <a class="header__logo-link" href="index.html" aria-label="Переход на главную страницу магазина.">
+        <img class="header__logo-image" src="img/svg/logo-mobile.svg" width="33" height="38"
+          alt="Логотип сайта магазина Cat Energy.">
+        <img class="header__logo-image" src="img/svg/logo-text.svg" width="101" height="18"
+          alt="Логотип сайта магазина Cat Energy.">
+      </a>
+      <button class="header__nav-toggle" type="button" aria-label="Открыть/закрыть меню.">
+        <span class="header__toggle-line"></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог продукции</a></li>
+          <li class="header__nav-item"><span class="header__nav-link">Подбор программы</span></li>
         </ul>
       </nav>
     </header>
   </div>
 
   <main class="main-content">
-    <h1 class="visually-hidden">
-      Страница подбора программы для вашего кота в магазине Cat-energy.
-    </h1>
 
     <section class="main-content__form-page form-page container">
+      <h1 class="visually-hidden">
+        Страница подбора программы для вашего кота в магазине Cat-energy.
+      </h1>
       <h2 class="form-page__title main-title">Подбор программы</h2>
       <p class="form-page__description">
         Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего
@@ -190,12 +180,12 @@
   <footer class="footer">
     <div class="container">
       <span class="footer__logo-link">
-        <img class="footer__logo" src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип сайта кетэнерджи." />
+        <img class="footer__logo" src="img/svg/logo-text.svg" width="128" height="24" alt="Логотип сайта Cat Energy." />
       </span>
       <div class="footer__social-wrapper">
         <ul class="footer__social">
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы во Вконтакте.</span>
               <svg width="28" height="17" viewBox="0 0 28 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -205,7 +195,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
               <span class="visually-hidden">Мы на Youtube.</span>
               <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -215,7 +205,7 @@
             </a>
           </li>
           <li class="footer__social-item">
-            <a class="footer__social-link" href="#">
+            <a class="footer__social-link" href="tg://resolve?domain=htmlacademy">
               <span class="visually-hidden">Мы в Telegram.</span>
               <svg width="21" height="18" viewBox="0 0 21 18" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd"

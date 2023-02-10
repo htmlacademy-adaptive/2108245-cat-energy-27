@@ -5,8 +5,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-default-black;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .index-sub-title {
@@ -16,8 +21,13 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-default-black;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .sub-title {
@@ -27,7 +37,7 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-default-black;
 }
 
@@ -36,9 +46,9 @@
   padding: 0;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: $fz-default;
   line-height: 20px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-default-black;
   text-transform: uppercase;
 }

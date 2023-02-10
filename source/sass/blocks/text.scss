@@ -4,17 +4,22 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Lato", "Aria", sans-serif;
+  font-family: $ff-text;
   color: $color-charcoal;
+
+  @media (min-width: $vp-tablet) {
+    font-size: $fz-default;
+    line-height: 24px;
+  }
 }
 
 .input-text {
   margin: 0;
 
   font-weight: 400;
-  font-size: 16px;
+  font-size: $fz-default;
   line-height: 18px;
-  font-family: "Oswald", "Arial", sans-serif;
+  font-family: $ff-default;
   color: $color-charcoal;
   text-transform: uppercase;
 }

@@ -1,4 +1,43 @@
 .header-container {
+  position: relative;
+
   margin-bottom: 20px;
   overflow: hidden;
+
+  @media (min-width: $vp-tablet) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    margin-bottom: 80px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+
+      width: 50%;
+      height: 100%;
+    }
+
+    &::before {
+      background-image: url("../../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+
+    &::after {
+      content: "";
+
+      background-color: rgba($color-apple, 0.85);
+    }
+  }
 }
