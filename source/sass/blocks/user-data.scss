@@ -14,7 +14,7 @@
     z-index: -1;
 
     width: calc(100vw - 20px);
-    min-width: calc($vp-mobile - 20px);
+    min-width: calc($vp-320 - 20px);
     height: 2px;
 
     background-color: $color-apple;

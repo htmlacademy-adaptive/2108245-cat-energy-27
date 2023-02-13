@@ -1,16 +1,35 @@
+.bonus {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../img/svg/gift.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    z-index: 2;
+  }
+
+}
+
 .bonus__title {
   position: relative;
   z-index: 1;
 
   margin: 0;
-  padding: 187px 61px 43px 58px;
-
   font-weight: 400;
   font-size: $fz-default;
   line-height: 20px;
-  font-family: $ff-text;
+  font-family: $ff-lato;
   text-align: center;
   color: $color-default-white;
+
+  padding: 187px 61px 43px 58px;
 
   &::before,
   &::after {
@@ -34,4 +53,5 @@
   &::after {
     background-color: rgba($color-apple, 0.85);
   }
+
 }

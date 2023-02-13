@@ -4,10 +4,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: $ff-text;
+  font-family: $ff-lato;
   color: $color-charcoal;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: $fz-default;
     line-height: 24px;
   }
@@ -19,7 +19,7 @@
   font-weight: 400;
   font-size: $fz-default;
   line-height: 18px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   color: $color-charcoal;
   text-transform: uppercase;
 }

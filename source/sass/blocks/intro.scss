@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     position: relative;
 
     padding-bottom: 188px;
@@ -17,11 +17,11 @@
   width: 100%;
   padding: 27px 0 164px 0;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 52px 204px 49px 88px;
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     width: 50%;
     padding: 79px 114px 52px 80px;
   }
@@ -35,7 +35,7 @@
     z-index: -1;
 
     width: 100vw;
-    min-width: $vp-mobile;
+    min-width: $vp-320;
     height: 100%;
 
     background-image: url("../../img/index-background-mobile.jpg");
@@ -47,7 +47,7 @@
       background-image: url("../img/index-background-mobile@2x.jpg");
     }
 
-    @media (min-width: $vp-tablet) {
+    @media (min-width: $vp-768) {
       display: none;
     }
   }
@@ -60,12 +60,12 @@
     z-index: -1;
 
     width: 100vw;
-    min-width: $vp-mobile;
+    min-width: $vp-320;
     height: 100%;
 
     background-color: rgba($color-apple, 0.85);
 
-    @media (min-width: $vp-tablet) {
+    @media (min-width: $vp-768) {
       display: none;
     }
   }
@@ -77,7 +77,7 @@
   text-align: center;
   color: $color-default-white;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     max-width: 416px;
     margin-bottom: 41px;
 
@@ -93,12 +93,12 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 0;
 
     font-size: 20px;
@@ -112,7 +112,7 @@
   order: 1;
   width: 100%;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     order: 0;
     width: auto;
     max-width: calc(100% - 280px);
@@ -120,7 +120,7 @@
     margin-left: 91px;
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     max-width: calc(50% - 180px);
     margin-left: 80px;
   }
@@ -133,14 +133,14 @@
   display: block;
   margin: -135px auto 3px auto;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     z-index: -1;
 
     width: 709px;
     margin: -83px auto 0 auto;
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     position: absolute;
     top: 0;
     left: 448px;

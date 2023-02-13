@@ -1,12 +1,32 @@
 .catalog {
   padding-top: 27px;
   padding-bottom: 25px;
+
+  @media (min-width: $vp-768) {
+    padding-top: 65px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $vp-1440) {
+    padding-top: 74px;
+  }
 }
 
 .catalog-title {
   padding-bottom: 41px;
 
   border-bottom: 1px solid $color-whisper-3;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 82px;
+    padding-bottom: 0;
+
+    border: none;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 84px;
+  }
 }
 
 .catalog__list {
@@ -18,6 +38,16 @@
   list-style: none;
 
   grid-template-columns: repeat(1, 1fr);
+
+  @media (min-width: $vp-768) {
+    gap: 60px;
+    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+  }
+
+  @media (min-width: $vp-1440) {
+    gap: 80px;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .catalog__item {
@@ -32,10 +62,32 @@
 
   grid-template-columns: repeat(2, 1fr);
 
-  &--pagination {
+  @media (min-width: $vp-768) {
+    bottom: 0;
+
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    margin: 0;
+    padding: 8px 36px 39px 36px;
+
+    border: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 100%;
+      height: calc(100% - 81px);
+
+      background-color: $color-white-smoke;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 1px 30px 40px 35px;
   }
 }
 
@@ -43,11 +95,30 @@
   display: flex;
 
   text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    justify-content: center;
+    align-items: flex-end;
+    width: 168px;
+    height: 200px;
+    margin: 0 auto 34px auto;
+  }
+
+  @media (min-width: $vp-1440) {
+    width: 172px;
+    height: 196px;
+    margin-bottom: 46px;
+  }
 }
 
 .catalog__product-image {
   display: block;
   margin: auto;
+
+  @media (min-width: $vp-768) {
+    display: block;
+    width: 100%;
+  }
 }
 
 .catalog__product-title {
@@ -56,9 +127,10 @@
   margin-bottom: 18px;
   padding-right: 60px;
 
-  &--pagination {
-    margin-bottom: 8px;
-    padding-right: 0;
+  @media (min-width: $vp-768) {
+    width: 159px;
+    margin: 0 auto 14px auto;
+    padding: 0;
 
     text-align: center;
   }
@@ -68,6 +140,14 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin-bottom: 33px;
+  }
 }
 
 .catalog__property-item {
@@ -75,14 +155,25 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 2px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 0;
+    padding: 8px 0;
+
+    border-bottom: 1px solid $color-very-light-grey;
+  }
 }
 
 .catalog__property-text {
   font-weight: 400;
   font-size: 12px;
   line-height: 16px;
-  font-family: $ff-text;
+  font-family: $ff-lato;
   color: $color-charcoal;
+
+  @media (min-width: $vp-768) {
+    font-size: $fz-default;
+  }
 }
 
 .catalog__product-therm {
@@ -102,8 +193,74 @@
 
   grid-column: -1/1;
 
+  @media (min-width: $vp-768) {
+    margin-top: auto;
+
+    font-size: $fz-default;
+  }
+
   &--pagination {
     margin-top: 0;
+  }
+}
+
+.catalog__item--pagination {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 50%;
+
+    width: 2px;
+    height: 30px;
+
+    background-color: $color-light-gray;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+
+  @media (min-width: $vp-768) {
+    margin-top: 81px;
+    padding: 161px 37px 38px 38px;
+
+    border: 2px solid $color-white-smoke;
+
+    &::before,
+    &::after {
+      top: 52px;
+
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $vp-1440) {
+    padding: 160px 38px 41px 38px;
+
+    &::before,
+    &::after {
+      top: 51px;
+    }
+  }
+
+
+  & .catalog__product-title {
+    margin-bottom: 8px;
+    padding-right: 0;
+
+    text-align: center;
+
+    @media (min-width: $vp-768) {
+      margin-bottom: 23px;
+    }
   }
 }
 
@@ -112,4 +269,9 @@
   margin-bottom: 21px;
 
   text-align: center;
+
+  @media (min-width: $vp-768) {
+    max-width: 165px;
+    margin: 0 auto 87px auto;
+  }
 }

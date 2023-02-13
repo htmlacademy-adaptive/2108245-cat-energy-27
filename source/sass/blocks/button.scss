@@ -5,7 +5,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   text-align: center;
   color: $color-default-white;
   text-transform: uppercase;
@@ -15,8 +15,8 @@
   border: none;
   cursor: pointer;
 
-  @media (min-width: $vp-tablet) {
-    padding: 14px 26px;
+  @media (min-width: $vp-768) {
+    padding: 10px 26px;
 
     font-size: 20px;
     line-height: 20px;
@@ -30,7 +30,7 @@
   font-weight: 400;
   font-size: $fz-default;
   line-height: 20px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   text-align: center;
   color: $color-charcoal;
   text-transform: uppercase;

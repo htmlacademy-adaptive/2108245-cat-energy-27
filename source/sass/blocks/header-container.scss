@@ -4,12 +4,13 @@
   margin-bottom: 20px;
   overflow: hidden;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 0;
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     margin-bottom: 80px;
+    overflow: visible;
 
     &::before,
     &::after {
@@ -19,7 +20,7 @@
       left: 50%;
       z-index: -1;
 
-      width: 50%;
+      width: 50vw;
       height: 100%;
     }
 

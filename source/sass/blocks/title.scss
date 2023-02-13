@@ -5,10 +5,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   color: $color-default-black;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -21,10 +21,10 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   color: $color-default-black;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     font-size: 60px;
     line-height: 60px;
   }
@@ -37,8 +37,13 @@
   font-weight: 400;
   font-size: 24px;
   line-height: 26px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   color: $color-default-black;
+
+  @media (min-width: $vp-768) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .product-title {
@@ -48,7 +53,16 @@
   font-weight: 400;
   font-size: $fz-default;
   line-height: 20px;
-  font-family: $ff-default;
+  font-family: $ff-oswald;
   color: $color-default-black;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $vp-1440) {
+    line-height: 21px;
+  }
 }

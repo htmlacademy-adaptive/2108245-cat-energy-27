@@ -1,7 +1,7 @@
 .advantages__title {
   margin-bottom: 40px;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     margin-bottom: 72px;
   }
 }
@@ -14,7 +14,7 @@
 
   list-style-type: none;
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     display: grid;
     justify-content: center;
     padding-bottom: 60px;
@@ -35,11 +35,11 @@
       width: calc(100% + 60px);
       height: 1px;
 
-      background-color: $color-whisper;
+      background-color: $color-whisper-1;
     }
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     padding-bottom: 0;
 
     column-gap: 83px;
@@ -62,12 +62,12 @@
   &:not(:last-child) {
     margin-bottom: 20px;
 
-    @media (min-width: $vp-tablet) {
+    @media (min-width: $vp-768) {
       margin-bottom: 0;
     }
   }
 
-  @media (min-width: $vp-tablet) {
+  @media (min-width: $vp-768) {
     padding: 111px 60px 44px 0;
 
     counter-increment: css-counter 1;
@@ -81,12 +81,12 @@
 
       font-size: 280px;
       line-height: 203px;
-      font-family: $ff-default;
+      font-family: $ff-oswald;
       color: $color-white-smoke;
     }
   }
 
-  @media (min-width: $vp-desktop) {
+  @media (min-width: $vp-1440) {
     padding-right: 0;
   }
 
@@ -103,7 +103,7 @@
     background-repeat: no-repeat;
     background-position: 50% 50%;
 
-    @media (min-width: $vp-tablet) {
+    @media (min-width: $vp-768) {
       width: 80px;
       height: 80px;
     }
