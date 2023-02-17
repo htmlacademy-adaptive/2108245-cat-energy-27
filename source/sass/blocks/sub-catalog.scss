@@ -5,6 +5,7 @@
 .sub-catalog__title {
   position: relative;
   z-index: 1;
+
   margin-bottom: 36px;
 
   line-height: 24px;
@@ -29,18 +30,21 @@
 
     @media (min-width: $vp-768) {
       left: -100vw;
+
       width: 200vw;
     }
 
     @media (min-width: $vp-1440) {
-      width: 200vw;
       left: -100vw;
+
+      width: 200vw;
     }
   }
 }
 
 .sub-catalog__title-inner {
   padding-right: 21px;
+
   background-color: $color-default-white;
 
   @media (min-width: $vp-768) {
@@ -49,6 +53,7 @@
 
   @media (min-width: $vp-1440) {
     padding: 0 35px 0 40px;
+
     transform: translateX(-40px);
   }
 }
@@ -69,10 +74,10 @@
   border-bottom: 1px solid $color-very-light-grey;
 
   @media (min-width: $vp-768) {
-    padding: 26px 38px 28px 38px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 26px 38px 28px 38px;
 
     &:first-child {
       border-top: 1px solid $color-very-light-grey;
@@ -80,10 +85,11 @@
   }
 
   @media (min-width: $vp-1440) {
-    padding: 15px 0 17px 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 246px;
+    padding: 15px 0 17px 0;
+
     gap: 15px;
+    grid-template-columns: 1fr 1fr 246px;
   }
 }
 
@@ -104,14 +110,14 @@
   margin-bottom: 15px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 0;
-    min-width: 50%;
     justify-content: flex-end;
+    min-width: 50%;
+    margin-bottom: 0;
   }
 
   @media (min-width: $vp-1440) {
+    justify-content: space-between;
     min-width: none;
-    justify-content: flex-start;
   }
 }
 
@@ -135,8 +141,8 @@
   padding-right: 10px;
 
   @media (min-width: $vp-768) {
-    padding-right: 0;
     margin-right: 15px;
+    padding-right: 0;
   }
 
   @media (min-width: $vp-1440) {
@@ -144,10 +150,21 @@
   }
 }
 
+.sub-catalog__product-price {
+  @media (min-width: $vp-1440) {
+    width: 65px;
+  }
+}
+
 .sub-catalog__link {
   @media (min-width: $vp-768) {
     width: 100%;
     margin-top: 22px;
+
     font-size: $fz-default;
+  }
+
+  @media (min-width: $vp-1440) {
+    margin: 0 0 auto 0;
   }
 }

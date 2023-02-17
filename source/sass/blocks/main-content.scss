@@ -64,7 +64,8 @@
 
   @media (min-width: $vp-1440) {
     margin-bottom: 86px;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 896px 245px;
+    gap: 79px;
   }
 }

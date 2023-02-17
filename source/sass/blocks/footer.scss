@@ -103,8 +103,14 @@
   line-height: 19px;
   font-family: $ff-lato;
   color: $color-charcoal;
+  pointer-events: none;
 }
 
 .footer__copyright-academy {
   padding-top: 8px;
+  pointer-events: all;
+}
+
+.footer__academy-icon {
+  pointer-events: all;
 }

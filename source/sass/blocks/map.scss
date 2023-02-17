@@ -24,7 +24,11 @@
   margin: 0 auto;
   padding: 26px 20px;
 
-  background-color: $color-default-white;
+  background-color: $color-white-smoke;
+
+  .map--index & {
+    background-color: $color-default-white;
+  }
 
   @media (min-width: $vp-768) {
     max-width: 1220px;
@@ -37,6 +41,7 @@
 
     max-width: 565px;
     padding: 56px 60px;
+    background-color: $color-default-white;
   }
 }
 

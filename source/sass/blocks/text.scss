@@ -22,4 +22,9 @@
   font-family: $ff-oswald;
   color: $color-charcoal;
   text-transform: uppercase;
+
+  @media (min-width: $vp-768) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
