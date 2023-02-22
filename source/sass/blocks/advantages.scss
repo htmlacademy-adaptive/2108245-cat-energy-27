@@ -39,10 +39,10 @@
     }
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding-bottom: 0;
 
-    column-gap: 83px;
+    column-gap: 7%;
 
     grid-template-columns: repeat(4, 1fr);
     row-gap: 40px;
@@ -71,8 +71,10 @@
     padding: 111px 60px 44px 0;
 
     counter-increment: css-counter 1;
+  }
 
-    &::after {
+  &::after {
+    @media (min-width: $vp-768) {
       content: counter(css-counter);
       position: absolute;
       top: 0;
@@ -84,9 +86,16 @@
       font-family: $ff-oswald;
       color: $color-white-smoke;
     }
+
+    @media (min-width: $vp-1024) {
+      left: unset;
+      right: 0;
+    }
   }
 
-  @media (min-width: $vp-1440) {
+
+
+  @media (min-width: $vp-1024) {
     padding-right: 0;
   }
 

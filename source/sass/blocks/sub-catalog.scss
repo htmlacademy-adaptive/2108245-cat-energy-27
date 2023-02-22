@@ -34,7 +34,7 @@
       width: 200vw;
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       left: -100vw;
 
       width: 200vw;
@@ -51,7 +51,7 @@
     padding: 0 36px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 0 35px 0 40px;
 
     transform: translateX(-40px);
@@ -84,7 +84,7 @@
     }
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: grid;
     padding: 15px 0 17px 0;
 
@@ -115,7 +115,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     justify-content: space-between;
     min-width: none;
   }
@@ -145,13 +145,13 @@
     padding-right: 0;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 229px;
   }
 }
 
 .sub-catalog__product-price {
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 65px;
   }
 }
@@ -164,7 +164,7 @@
     font-size: $fz-default;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0 0 auto 0;
   }
 }

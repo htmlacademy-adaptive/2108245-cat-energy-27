@@ -3,14 +3,13 @@
   min-width: $vp-320;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1220px;
+  max-width: 1300px;
 
   @media (min-width: $vp-768) {
     padding: 0 30px;
   }
 
-  @media (min-width: $vp-1440) {
-    max-width: $vp-1440;
-    padding: 0 110px;
+  @media (min-width: $vp-1024) {
+    padding: 0 40px;
   }
 }

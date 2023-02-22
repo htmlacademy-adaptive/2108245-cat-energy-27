@@ -5,9 +5,8 @@
     min-height: 200px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     width: 245px;
-    height: 100%;
     max-height: none;
     margin-top: 104px;
   }
@@ -42,7 +41,7 @@
       }
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       background-image: url("../img/bonus-background-desktop.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -66,7 +65,7 @@
     padding: 71px 18% 69px 59%;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 185px 43px 42px 41px;
   }
 
@@ -94,7 +93,7 @@
       transform: none;
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       top: 56px;
       left: 50%;
 
@@ -120,7 +119,7 @@
     text-align: left;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin: 0 auto;
 
     text-align: center;

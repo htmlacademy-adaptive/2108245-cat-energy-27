@@ -10,7 +10,7 @@
     background-color: transparent;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     padding: 0;
   }
 }
@@ -22,13 +22,13 @@
     margin-bottom: 63px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 76px;
   }
 }
 
 .example__wrapper {
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -36,11 +36,12 @@
 }
 
 .example__content-wrapper {
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     position: relative;
 
-    max-width: 506px;
-    padding: 70px 70px 75px 0;
+    width: calc(100% - 570px);
+    max-width: 446px;
+    padding: 70px 10px 75px 0;
 
     &::before {
       content: "";
@@ -64,7 +65,7 @@
     margin-bottom: 54px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 69px;
   }
 }
@@ -78,7 +79,7 @@
     margin-bottom: 99px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: block;
     margin-bottom: 0;
   }
@@ -100,8 +101,9 @@
     grid-template-columns: repeat(auto-fill, 162px);
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 55px;
+    gap: 9%;
   }
 }
 
@@ -116,6 +118,10 @@
 
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
+
+  @media (min-width: $vp-1024) {
+    padding: 15px 9% 16px 9%;
+  }
 }
 
 .example__term {
@@ -146,7 +152,7 @@
     background-color: $color-default-white;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     background-color: $color-whisper-2;
   }
 }
@@ -188,11 +194,11 @@
     text-align: end;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 327px;
+    width: 100%;
   }
 }
 
@@ -206,8 +212,15 @@
   @media (min-width: $vp-768) {
     width: 560px;
     height: 512px;
+  }
 
-    &::before {
+  @media (min-width: $vp-1024) {
+    transform: translateY(-136px);
+    margin: 0 0 0 auto;
+  }
+
+  &::before {
+    @media (min-width: $vp-768) {
       content: "";
       position: absolute;
       top: 151px;
@@ -218,16 +231,10 @@
 
       background-color: $color-whisper-2;
     }
-  }
 
-  @media (min-width: $vp-1440) {
-    &::before {
+    @media (min-width: $vp-1024) {
       display: none;
     }
-  }
-
-  @media (min-width: $vp-1440) {
-    transform: translateY(-136px);
   }
 }
 

@@ -17,16 +17,24 @@
     padding-left: 60px;
   }
 
-  &:hover .choice__radio {
+  @media (min-width: $vp-1024) {
+    width: 100%;
+
+    padding-left: calc(40px + 8%);
+  }
+
+  &:hover .choice__radio,
+  &:hover .choice__checkbox {
     border-color: $color-silver;
   }
 
-  &:active .choice__radio {
+  &:focus .choice__radio,
+  &:focus .choice__checkbox {
     border-color: $color-silver;
-    outline: none;
   }
 
-  &:focus .choice__radio {
+  &:active .choice__radio,
+  &:active .choice__checkbox {
     border-color: $color-silver;
     outline: none;
   }

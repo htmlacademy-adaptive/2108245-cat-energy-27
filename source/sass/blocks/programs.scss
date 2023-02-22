@@ -11,7 +11,7 @@
     margin: 0 auto;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     display: grid;
     max-width: none;
 
@@ -32,7 +32,7 @@
   &:not(:last-child) {
     margin-bottom: 20px;
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       margin-bottom: 0;
     }
   }
@@ -42,9 +42,9 @@
     padding: 77px 316px 53px 52px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 0;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 11% 55px 9%;
   }
 
   &::before {
@@ -70,10 +70,10 @@
       height: 200px;
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       top: 47px;
       right: unset;
-      left: 52px;
+      left: 9%;
 
       width: 100px;
       height: 100px;
@@ -87,7 +87,7 @@
       content: url("../img/svg/cat-slim-tablet.svg");
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       content: url("../img/svg/cat-slim-desktop.svg");
     }
   }
@@ -99,7 +99,7 @@
       content: url("../img/svg/cat-pro-tablet.svg");
     }
 
-    @media (min-width: $vp-1440) {
+    @media (min-width: $vp-1024) {
       content: url("../img/svg/cat-pro-desktop.svg");
     }
   }
@@ -124,9 +124,9 @@
     line-height: 36px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 73px;
-    padding-left: 162px;
+    padding-left: calc(100px + 11%);
   }
 }
 
@@ -149,7 +149,7 @@
     border: none;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     margin-bottom: 23px;
   }
 }
@@ -158,7 +158,7 @@
   position: relative;
 
   display: inline-flex;
-  padding-right: 39px;
+  padding-right: 57px;
 
   font-weight: 400;
   font-size: $fz-default;
@@ -177,12 +177,59 @@
     content: "";
     position: absolute;
     top: 50%;
-    right: 0;
+    right: 18px;
+
+    width: 18px;
+    height: 2px;
+
+    background-color: $color-default-black;
+    transform: translateY(-50%);
+
+    transition: all 0.3s;
+
+    /*top: 50%;
+    right: 8px;
 
     width: 24px;
     height: 12px;
 
     background-image: url("../img/svg/catalog-link-arrow.svg");
     transform: translateY(-50%);
+    transition: transform 0.3s;*/
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 11px;
+
+    width: 0;
+    height: 0;
+
+    border-width: 5px 0 5px 7px;
+    border-style: solid;
+    border-color: transparent
+      transparent
+      transparent
+      $color-default-black;
+    transform: translateY(-50%);
+
+    transition: all 0.3s;
+  }
+
+  &:hover::before {
+    right: 10px;
+
+    width: 26px;
+  }
+
+  &:hover::after {
+    right: 3px;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
   }
 }

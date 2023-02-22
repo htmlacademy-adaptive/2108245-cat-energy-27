@@ -21,6 +21,21 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-limeade;
+    color: rgba($color-default-white, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .button-pagination {
@@ -39,4 +54,19 @@
   background-color: $color-white-smoke;
   border: none;
   cursor: pointer;
+
+  &:hover {
+    background-color: $color-whisper-3;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-whisper-3;
+    color: rgba($color-default-black, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }

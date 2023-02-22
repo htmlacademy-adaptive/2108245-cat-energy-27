@@ -2,6 +2,15 @@
   position: relative;
 
   background-color: $color-white-smoke;
+  min-height: 474px;
+
+  @media (min-width: $vp-768) {
+    min-height: 599px;
+  }
+
+  @media (min-width: $vp-1024) {
+    min-height: 400px;
+  }
 
   &--index {
     background-color: transparent;
@@ -9,10 +18,11 @@
 }
 
 .map__description-container {
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     max-width: 1220px;
+    min-height: 400px;
     margin: 0 auto;
-    padding: 95px 655px 107px 0;
+    padding: 95px 0 107px 0;
   }
 }
 
@@ -20,27 +30,28 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-width: $vp-320;
   margin: 0 auto;
-  padding: 26px 20px;
+  padding: 26px 0;
 
   background-color: $color-white-smoke;
-
-  .map--index & {
-    background-color: $color-default-white;
-  }
+  max-width: 500px;
 
   @media (min-width: $vp-768) {
     max-width: 1220px;
     padding: 56px 70px;
   }
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     position: relative;
     z-index: 3;
 
     max-width: 565px;
-    padding: 56px 60px;
+    padding: 56px 80px;
+    background-color: $color-default-white;
+    margin: 0 auto 0 0;
+  }
+
+  .map--index & {
     background-color: $color-default-white;
   }
 }
@@ -48,6 +59,7 @@
 .map__description {
   max-width: 140px;
   margin: 0;
+  padding-right: 10px;
 
   font-weight: 400;
   font-size: $fz-default;
@@ -73,9 +85,13 @@
   line-height: 20px;
 
   @media (min-width: $vp-768) {
-    max-width: 180px;
+    max-width: 157px;
 
-    text-align: end;
+    text-align: right;
+  }
+
+  @media (min-width: $vp-1024) {
+    text-align: left;
   }
 }
 
@@ -95,13 +111,17 @@
   display: block;
   width: 100%;
   height: auto;
-  max-height: 400px;
+  max-height: 362px;
 
   background-color: $color-white-smoke;
 
   object-fit: cover;
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-768) {
+    max-height: 400px;
+  }
+
+  @media (min-width: $vp-1024) {
     top: 0;
     bottom: unset;
 
@@ -122,7 +142,7 @@
 
   object-fit: cover;
 
-  @media (min-width: $vp-1440) {
+  @media (min-width: $vp-1024) {
     position: absolute;
     top: 0;
     left: 0;
