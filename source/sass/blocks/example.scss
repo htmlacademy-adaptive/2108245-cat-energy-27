@@ -1,7 +1,6 @@
 .example {
   padding: 25px 0 40px 0;
   overflow: hidden;
-
   background-color: $color-whisper-2;
 
   @media (min-width: $vp-768) {
@@ -11,7 +10,23 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding: 0;
+    padding-bottom: 0;
+  }
+}
+
+.example__wrapper {
+  max-width: 470px;
+  margin: 0 auto;
+
+  @media (min-width: $vp-768) {
+    max-width: unset;
+    margin: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    display: grid;
+    grid-template-columns: 1fr 560px;
+    gap: 10px;
   }
 }
 
@@ -27,19 +42,9 @@
   }
 }
 
-.example__wrapper {
-  @media (min-width: $vp-1024) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-}
-
 .example__content-wrapper {
   @media (min-width: $vp-1024) {
     position: relative;
-
-    width: calc(100% - 570px);
     max-width: 446px;
     padding: 70px 10px 75px 0;
 
@@ -62,7 +67,9 @@
   margin-bottom: 20px;
 
   @media (min-width: $vp-768) {
+    margin: 0;
     margin-bottom: 54px;
+    max-width: unset;
   }
 
   @media (min-width: $vp-1024) {
@@ -215,7 +222,6 @@
   }
 
   @media (min-width: $vp-1024) {
-    transform: translateY(-136px);
     margin: 0 0 0 auto;
   }
 
@@ -332,11 +338,4 @@
 .example__slider-image {
   position: relative;
   z-index: 3;
-}
-
-.scrolling {
-  opacity: 1;
-
-  pointer-events: none;
-  // z-index: 1;
 }

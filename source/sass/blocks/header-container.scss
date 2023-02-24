@@ -2,7 +2,6 @@
   position: relative;
 
   margin-bottom: 20px;
-  overflow: hidden;
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
@@ -10,7 +9,6 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 80px;
-    overflow: visible;
 
     &::before,
     &::after {
@@ -25,7 +23,7 @@
     }
 
     &::before {
-      background-image: url("../../img/index-background-desktop.jpg");
+      background-image: url("../img/index-background-desktop.jpg");
       background-repeat: no-repeat;
       background-position: left;
       background-size: cover;

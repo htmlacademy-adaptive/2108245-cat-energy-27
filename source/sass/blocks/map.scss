@@ -5,7 +5,7 @@
   min-height: 474px;
 
   @media (min-width: $vp-768) {
-    min-height: 599px;
+    min-height: 592px;
   }
 
   @media (min-width: $vp-1024) {
@@ -136,11 +136,15 @@
 
   display: block;
   width: 100%;
-  max-height: 400px;
+  max-height: 362px;
 
   border: none;
 
   object-fit: cover;
+
+  @media (min-width: $vp-768) {
+    max-height: 400px;
+  }
 
   @media (min-width: $vp-1024) {
     position: absolute;
