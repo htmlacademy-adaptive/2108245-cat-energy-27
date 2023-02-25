@@ -4,8 +4,6 @@
 
   @media (min-width: $vp-1024) {
     position: relative;
-
-    padding-bottom: 188px;
   }
 }
 
@@ -18,12 +16,12 @@
   padding: 27px 0 164px 0;
 
   @media (min-width: $vp-768) {
-    padding: 52px 204px 49px 88px;
+    padding: 51px 204px 48px 88px;
   }
 
   @media (min-width: $vp-1024) {
     width: 50%;
-    padding: 79px 1% 52px 7%;
+    padding: 79px 1% 53px 79px;
   }
 
 
@@ -100,6 +98,7 @@
 
   @media (min-width: $vp-768) {
     padding: 0;
+    padding-left: 2px;
 
     font-size: 20px;
     line-height: 20px;
@@ -118,6 +117,7 @@
     max-width: calc(100% - 280px);
     margin-right: auto;
     margin-left: 91px;
+    padding: 17px 27px;
   }
 
   @media (min-width: $vp-1024) {
@@ -137,15 +137,15 @@
     z-index: -1;
 
     width: 709px;
-    margin: -83px auto 0 auto;
+    margin: -82px auto 0 auto;
   }
 
   @media (min-width: $vp-1024) {
     position: absolute;
     top: 0;
-    left: 460px;
+    left: 448px;
     z-index: 1;
-    max-width: 512px;
+    max-width: 552px;
 
     width: 50%;
     height: auto;

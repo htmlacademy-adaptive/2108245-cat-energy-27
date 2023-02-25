@@ -41,7 +41,7 @@
 
   @media (min-width: $vp-768) {
     gap: 60px;
-    grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (min-width: $vp-1024) {

@@ -10,7 +10,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    padding: 66px 0;
+    padding: 65px 0;
   }
 }
 
@@ -78,21 +78,21 @@
   align-items: flex-end;
   align-self: center;
   margin: 0 auto -15px auto;
-  padding: 20px 15px;
+  padding: 22px 15px 16px 15px;
 
   list-style-type: none;
 
-  transform: translateX(12px);
+  transform: translateX(11px);
 
   @media (min-width: $vp-768) {
-    padding: 0;
+    padding-top: 10px;
   }
 }
 
 .footer__social-item {
   display: flex;
   align-items: center;
-  margin-right: 24px;
+  margin-right: 26px;
   margin-bottom: 15px;
 }
 

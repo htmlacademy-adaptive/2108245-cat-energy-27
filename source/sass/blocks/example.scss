@@ -4,7 +4,7 @@
   background-color: $color-whisper-2;
 
   @media (min-width: $vp-768) {
-    padding: 0 0 101px 0;
+    padding: 0 0 100px 0;
 
     background-color: transparent;
   }
@@ -30,6 +30,18 @@
   }
 }
 
+.example__text-wrapper {
+  @media (min-width: $vp-768) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -27px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
+}
+
 .example__title {
   margin-bottom: 40px;
 
@@ -46,7 +58,7 @@
   @media (min-width: $vp-1024) {
     position: relative;
     max-width: 446px;
-    padding: 70px 10px 75px 0;
+    padding: 70px 2% 74px 0;
 
     &::before {
       content: "";
@@ -95,7 +107,7 @@
 .example__list {
   display: grid;
   max-width: 320px;
-  margin: 0 auto 34px auto;
+  margin: 0 auto 10px auto;
 
   gap: 11%;
   grid-template-columns: repeat(2, 1fr);
@@ -104,39 +116,27 @@
     width: 100%;
     max-width: none;
     margin: 0;
+    gap: 8%;
 
     grid-template-columns: repeat(auto-fill, 162px);
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 55px;
-    gap: 6%;
+    margin-bottom: 20px;
+    gap: 10%;
   }
 }
 
 .example__item {
-  position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 162px;
-  padding: 15px 15px 16px 15px;
-
-  border: 1px solid $color-very-light-grey;
-  border-radius: 3px;
-
-  @media (min-width: $vp-1024) {
-    padding: 15px 9% 16px 9%;
-  }
 }
 
 .example__term {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-
-  width: 80px;
+  order: 1;
+  width: 81px;
   height: auto;
 
   font-weight: 400;
@@ -144,14 +144,17 @@
   line-height: 12px;
   font-family: $ff-lato;
   text-align: center;
+  text-transform: lowercase;
   color: $color-charcoal;
 
   background-color: $color-whisper-2;
-  transform: translate(-50%, 50%);
+  transform: translateY(-9px);
 
   @media (min-width: $vp-768) {
     width: max-content;
+    max-width: 146px;
     padding: 9px;
+    transform: translateY(-16px);
 
     font-size: 14px;
     line-height: 14px;
@@ -161,6 +164,7 @@
 
   @media (min-width: $vp-1024) {
     background-color: $color-whisper-2;
+    padding: 9px 6%;
   }
 }
 
@@ -173,10 +177,22 @@
   font-family: $ff-oswald;
   color: $color-default-black;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+
+  padding: 13px 14px 17px 14px;
+
+  border: 1px solid $color-very-light-grey;
+  border-radius: 3px;
 
   @media (min-width: $vp-768) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 14px 18px 14px;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 15px 4% 16px 4%;
   }
 }
 
@@ -206,8 +222,20 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 100%;
+    max-width: 327px;
   }
 }
+
+.example__cost-text:not(:last-child) {
+  @media (min-width: $vp-768) {
+    margin-bottom: 10px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
+}
+
 
 .example__comparison {
   position: relative;
@@ -222,7 +250,7 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin: 0 0 0 auto;
+    margin: 1px 0 0 auto;
   }
 
   &::before {

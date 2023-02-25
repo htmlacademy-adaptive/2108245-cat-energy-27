@@ -53,7 +53,7 @@
 
   @media (min-width: $vp-1024) {
     padding: 0 35px 0 40px;
-
+    display: inline-flex;
     transform: translateX(-40px);
   }
 }
@@ -117,7 +117,7 @@
 
   @media (min-width: $vp-1024) {
     justify-content: space-between;
-    min-width: none;
+    min-width: unset;
   }
 }
 

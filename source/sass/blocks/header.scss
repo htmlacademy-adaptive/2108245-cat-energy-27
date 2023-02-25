@@ -3,7 +3,7 @@
 
   display: flex;
   min-height: 65px;
-  padding-top: 10px;
+  padding-top: 14px;
 
   @media (min-width: $vp-768) {
     width: auto;
@@ -13,7 +13,7 @@
 
   @media (min-width: $vp-1024) {
     padding-top: 53px;
-    padding-bottom: 32px;
+    padding-bottom: 26px;
   }
 
   &::before {
@@ -45,8 +45,8 @@
 .header__logo-link {
   display: flex;
   justify-content: space-between;
-  width: calc(50% + 52px);
-  margin-bottom: 17px;
+  width: calc(50% + 50px);
+  /* margin-bottom: 17px;*/
 
   text-decoration: none;
 
@@ -82,6 +82,10 @@
   }
 
   &--text {
+    align-self: flex-start;
+    display: flex;
+    padding-top: 9px;
+
     @media (min-width: $vp-768) {
       display: none;
     }
@@ -94,6 +98,7 @@
   height: 30px;
   margin-left: auto;
   padding: 5px 3px;
+  transform: translateX(3px) translateY(3px);
 
   background-color: transparent;
   border: none;
@@ -170,7 +175,7 @@
   @media (min-width: $vp-1024) {
     width: 50%;
     max-width: none;
-    padding-top: 16px;
+    padding-top: 6px;
     padding-left: 15px;
   }
 }
@@ -209,6 +214,7 @@
     column-gap: 34px;
 
     background-color: transparent;
+    transform: translateX(-2px);
 
     row-gap: 10px;
   }
@@ -274,13 +280,13 @@
 
 .header__nav-link {
   display: block;
-  padding: 22px 20px 24px 20px;
+  padding: 23px 20px;
 
   color: inherit;
   text-decoration: none;
 
   @media (min-width: $vp-768) {
-    padding: 10px 0;
+    padding: 10px 0 8px 0;
   }
 
   &:hover {
