@@ -26,27 +26,15 @@
   margin-bottom: 25px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 68px;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $vp-1024) {
-    margin-bottom: 75px;
+    margin-bottom: 80px;
   }
 }
 
 .main-content__sub-catalog {
-  margin-bottom: 35px;
-
-  @media (min-width: $vp-768) {
-    margin-bottom: 69px;
-  }
-
-  @media (min-width: $vp-1024) {
-    margin-bottom: 0;
-  }
-}
-
-.main-content__bonus {
   margin-bottom: 35px;
 
   @media (min-width: $vp-768) {
@@ -55,15 +43,5 @@
 
   @media (min-width: $vp-1024) {
     margin-bottom: 0;
-    margin-right: 79px;
-  }
-}
-
-.main-content__wrapper {
-  @media (min-width: $vp-1024) {
-    margin-bottom: 86px;
-    display: grid;
-    grid-template-columns: auto 245px;
-    gap: 6%;
   }
 }

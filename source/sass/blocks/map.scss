@@ -5,7 +5,7 @@
   min-height: 474px;
 
   @media (min-width: $vp-768) {
-    min-height: 592px;
+    min-height: 598px;
   }
 
   @media (min-width: $vp-1024) {
@@ -15,6 +15,10 @@
 
   &--index {
     background-color: transparent;
+
+    @media (min-width: $vp-768) {
+      min-height: 592px;
+    }
 
     @media (min-width: $vp-1024) {
       background-color: $color-apple;
@@ -59,6 +63,12 @@
   .map--index & {
     background-color: $color-default-white;
   }
+
+  &--catalog {
+    @media (min-width: $vp-1024) {
+      padding: 56px 110px 42px 80px;
+    }
+  }
 }
 
 .map__description {
@@ -99,12 +109,24 @@
   @media (min-width: $vp-1024) {
     text-align: left;
   }
+
+  .map__description-wrapper--catalog & {
+    @media (min-width: $vp-1024) {
+      max-width: 127px;
+    }
+  }
 }
 
 .map__address-street {
   @media (min-width: $vp-768) {
     display: block;
     margin-bottom: 20px;
+  }
+
+  .map__description-wrapper--catalog & {
+    @media (min-width: $vp-1024) {
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -1,5 +1,13 @@
 .sub-catalog {
   position: relative;
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 86px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: calc(6% + 6px);
+    row-gap: 86px;
+  }
 }
 
 .sub-catalog__title {
@@ -11,7 +19,12 @@
   line-height: 24px;
 
   @media (min-width: $vp-768) {
-    margin-bottom: 80px;
+    margin-bottom: 85px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+    grid-column: 1/-1;
   }
 
 
@@ -36,6 +49,7 @@
 
     @media (min-width: $vp-1024) {
       left: -100vw;
+      top: 16px;
 
       width: 200vw;
     }
@@ -64,12 +78,25 @@
   flex-direction: column;
   margin: 0;
   padding: 0;
+  margin-bottom: 35px;
+
 
   list-style-type: none;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+
+    grid-column: 1/4;
+  }
+
 }
 
 .sub-catalog__item {
-  padding: 13px 0 19px 0;
+  padding: 13px 0 18px 0;
 
   border-bottom: 1px solid $color-very-light-grey;
 
@@ -77,7 +104,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 26px 38px 28px 38px;
+    padding: 28px 40px;
 
     &:first-child {
       border-top: 1px solid $color-very-light-grey;
@@ -86,10 +113,10 @@
 
   @media (min-width: $vp-1024) {
     display: grid;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 16px 0;
 
     gap: 15px;
-    grid-template-columns: 1fr 1fr 246px;
+    grid-template-columns: 1fr 1fr 0.8fr;
   }
 }
 
@@ -100,6 +127,10 @@
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding-top: 12px;
   }
 }
 
@@ -118,6 +149,7 @@
   @media (min-width: $vp-1024) {
     justify-content: space-between;
     min-width: unset;
+    padding-top: 13px;
   }
 }
 
@@ -151,8 +183,14 @@
 }
 
 .sub-catalog__product-price {
+  @media (min-width: $vp-768) {
+    width: 78px;
+    text-align: right;
+  }
+
   @media (min-width: $vp-1024) {
     width: 65px;
+    text-align: left;
   }
 }
 
@@ -168,3 +206,131 @@
     margin: 0 0 auto 0;
   }
 }
+
+.sub-catalog__bonus {
+  position: relative;
+
+  @media (min-width: $vp-768) {
+    min-height: 200px;
+  }
+
+  @media (min-width: $vp-1024) {
+    width: 245px;
+    max-height: none;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &::before {
+    background-image: url("../img/bonus-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/bonus-background-mobile@2x.jpg");
+    }
+
+    @media (min-width: $vp-768) {
+      background-image: url("../img/bonus-background-tablet.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bonus-background-tablet@2x.jpg");
+      }
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/bonus-background-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/bonus-background-desktop@2x.jpg");
+      }
+    }
+  }
+
+  &::after {
+    background-color: rgba($color-apple, 0.85);
+  }
+}
+
+.sub-catalog__bonus-container {
+  position: relative;
+
+  display: flex;
+  padding: 187px 61px 43px 58px;
+
+  @media (min-width: $vp-768) {
+    padding: 71px 18% 69px 59%;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 185px 43px 42px 41px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 59px;
+    left: 50%;
+
+    width: 78px;
+    height: 80px;
+
+    background-image: url("../img/svg/gift.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $vp-768) {
+      top: 57px;
+      left: 11%;
+
+      width: 80px;
+      height: 83px;
+
+      transform: none;
+    }
+
+    @media (min-width: $vp-1024) {
+      top: 56px;
+      left: 50%;
+
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.sub-catalog__bonus-title {
+  max-width: 161px;
+  margin: 0 auto;
+
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 20px;
+  font-family: $ff-lato;
+  text-align: center;
+  color: $color-default-white;
+
+  @media (min-width: $vp-768) {
+    margin-left: 0 0 0 auto;
+
+    text-align: left;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin: 0 auto;
+
+    text-align: center;
+  }
+}
+
