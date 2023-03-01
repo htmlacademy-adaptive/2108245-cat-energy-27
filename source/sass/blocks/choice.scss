@@ -20,7 +20,13 @@
   @media (min-width: $vp-1024) {
     width: 100%;
 
-    padding-left: calc(40px + 8%);
+    padding-left: calc(40px + 4%);
+  }
+
+  &--checkbox {
+    @media (min-width: $vp-1024) {
+      padding-left: calc(40px + 8%);
+    }
   }
 
   &:hover .choice__radio,

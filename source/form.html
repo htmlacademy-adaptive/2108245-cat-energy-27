@@ -87,21 +87,21 @@
                   Выберите желаемую программу.
                 </legend>
                 <ul class="form-page__list">
-                  <li class="form-page__item choice">
+                  <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="slimming" name="user-goal"
                         value="Похудение" checked />
                       <span class="choice__radio"></span>
                       <span class="choice__name input-text">Похудение</span></label>
                   </li>
-                  <li class="form-page__item choice">
+                  <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="weight-gain" name="user-goal"
                         value="Набор массы" />
                       <span class="choice__radio"></span>
                       <span class="choice__name input-text">Набор массы</span></label>
                   </li>
-                  <li class="form-page__item choice">
+                  <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="need-consultation" name="user-goal"
                         value="Не знаю (нужен ваш совет)" />
@@ -112,14 +112,15 @@
               </fieldset>
             </div>
 
-            <fieldset class="form-page__group">
+            <fieldset class="form-page__group form-page__group--contacts">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title form-page__group-title--contact sub-title">Контактные&nbsp;данные
-                  (владельца&nbsp;кота)</h2>
+                <h2 class="form-page__group-title-container"><span
+                    class="form-page__group-title form-page__group-title--contact sub-title">Контактные данные
+                    (владельца кота)</span></h2>
               </legend>
               <div class="form-page__inputs-wrapper">
                 <label class="form-page__label">
-                  <span class="form-page__input-name input-text">E-mail:*</span>
+                  <span class="form-page__input-name form-page__input-name--contacts input-text">E-mail:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
                   <input class="form-page__input form-page__input--with-icon input-text" type="email" id="email"
                     value="kuklachev@gmail.com" placeholder="Введите ваш email" required />
@@ -128,7 +129,7 @@
                   </svg>
                 </label>
                 <label class="form-page__label" for="phone">
-                  <span class="form-page__input-name input-text">Телефон:*</span>
+                  <span class="form-page__input-name form-page__input-name--contacts input-text">Телефон:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
                   <input class="form-page__input form-page__input--with-icon input-text" type="tel" id="phone"
                     name="phone" value="8 (960) 900-60-90" placeholder="Введите ваш email" required />
@@ -139,9 +140,11 @@
               </div>
             </fieldset>
 
-            <fieldset class="form-page__group">
+            <fieldset class="form-page__group form-page__group--commit">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title sub-title">Комментарий</h2>
+                <h2 class="form-page__group-title-container"><span
+                    class="form-page__group-title sub-title">Комментарий</span>
+                </h2>
               </legend>
               <label>
                 <span class="visually-hidden">Комментарий в свободной форме.</span>
@@ -152,32 +155,33 @@
 
             <fieldset class="form-page__group form-page__group--additional">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title sub-title">Дополнительно:</h2>
+                <h2 class="form-page__group-title-container"><span
+                    class="form-page__group-title sub-title">Дополнительно</span></h2>
               </legend>
               <ul class="form-page__list form-page__list--column">
-                <li class="form-page__item choice">
-                  <label class="choice__label">
+                <li class="form-page__item-checkbox choice">
+                  <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options"
                       id="sweetener" value="Сахарозаменитель" checked />
                     <span class="choice__checkbox"></span>
                     <span class="choice__name input-text">Сахарозаменитель</span></label>
                 </li>
-                <li class="form-page__item choice">
-                  <label class="choice__label">
+                <li class="form-page__item-checkbox choice">
+                  <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="water"
                       value="Питьевая вода" />
                     <span class="choice__checkbox"></span>
                     <span class="choice__name input-text">Питьевая вода</span></label>
                 </li>
-                <li class="form-page__item choice">
-                  <label class="choice__label">
+                <li class="form-page__item-checkbox choice">
+                  <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="milk"
                       value="Молоко" />
                     <span class="choice__checkbox"></span>
                     <span class="choice__name input-text">Молоко</span></label>
                 </li>
-                <li class="form-page__item choice">
-                  <label class="choice__label">
+                <li class="form-page__item-checkbox choice">
+                  <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="vitamins"
                       value="Витамины" />
                     <span class="choice__checkbox"></span>

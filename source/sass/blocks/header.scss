@@ -321,9 +321,11 @@
     @media (min-width: $vp-768) {
       border-bottom: 2px solid $color-apple;
     }
+  }
+}
 
-    @media (min-width: $vp-1024) {
-      border-color: $color-default-white;
-    }
+.header__nav-list--index .header__nav-link--current {
+  @media (min-width: $vp-1024) {
+    border-color: $color-default-white;
   }
 }
