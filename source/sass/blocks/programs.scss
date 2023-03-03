@@ -89,11 +89,13 @@
 
     @media (min-width: $vp-768) {
       content: url("../img/svg/cat-slim-tablet.svg");
+
       padding-bottom: 24px;
     }
 
     @media (min-width: $vp-1024) {
       content: url("../img/svg/cat-slim-desktop.svg");
+
       padding-bottom: 10px;
     }
   }
@@ -180,9 +182,10 @@
   }
 
   @media (min-width: $vp-1024) {
+    margin: auto auto 0 0;
+
     font-size: 20px;
     line-height: 30px;
-    margin: auto auto 0 0;
   }
 
   &::before {

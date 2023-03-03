@@ -7,7 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="Магазин питания для котиков Cat Energy, подбор правильного питания, похудейте кота, накачайте кота.">
-  <link rel="stylesheet" href="./css/style.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswald-regular.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/oswald/oswald-medium.woff2" as="font" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
@@ -18,7 +19,6 @@
 </head>
 
 <body>
-
   <div class="wrapper">
     <div class="container">
       <!--Класс no-js в хедере добавляет поведение при отсутствии скриптов-->
@@ -38,24 +38,25 @@
         </button>
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a class="header__nav-link" href="index.html">Главная</a></li>
-            <li class="header__nav-item"><a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="index.html">Главная</a>
             </li>
-            <li class="header__nav-item"><span class="header__nav-link header__nav-link--current">Подбор
-                программы</span></li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__nav-item">
+              <span class="header__nav-link header__nav-link--current">Подбор программы</span>
+            </li>
           </ul>
         </nav>
       </header>
     </div>
 
     <main class="main-content">
-
       <section class="main-content__form-page form-page">
         <div class="container">
           <h1 class="form-page__title main-title">Подбор программы</h1>
-          <p class="form-page__description">
-            Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего
-            кота
+          <p class="form-page__description"> Заполните анкету, и&nbsp;мы&nbsp;подберем программу питания для вашего кота
           </p>
 
           <form class="form-page__form" method="POST" action="https://echo.htmlacademy.ru">
@@ -90,23 +91,26 @@
                   <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="slimming" name="user-goal"
-                        value="Похудение" checked />
+                        value="Похудение" checked>
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Похудение</span></label>
+                      <span class="choice__name input-text">Похудение</span>
+                    </label>
                   </li>
                   <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="weight-gain" name="user-goal"
-                        value="Набор массы" />
+                        value="Набор массы">
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Набор массы</span></label>
+                      <span class="choice__name input-text">Набор массы</span>
+                    </label>
                   </li>
                   <li class="form-page__item-radio choice">
                     <label class="choice__label">
                       <input class="visually-hidden choice__input" type="radio" id="need-consultation" name="user-goal"
-                        value="Не знаю (нужен ваш совет)" />
+                        value="Не знаю (нужен ваш совет)">
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Не знаю (нужен ваш совет)</span></label>
+                      <span class="choice__name input-text">Не знаю (нужен ваш совет)</span>
+                    </label>
                   </li>
                 </ul>
               </fieldset>
@@ -114,16 +118,17 @@
 
             <fieldset class="form-page__group form-page__group--contacts">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title-container"><span
-                    class="form-page__group-title form-page__group-title--contact sub-title">Контактные данные
-                    (владельца кота)</span></h2>
+                <h2 class="form-page__group-title-container">
+                  <span class="form-page__group-title form-page__group-title--contact sub-title">Контактные данные
+                    (владельца кота)</span>
+                </h2>
               </legend>
               <div class="form-page__inputs-wrapper">
                 <label class="form-page__label">
                   <span class="form-page__input-name form-page__input-name--contacts input-text">E-mail:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
                   <input class="form-page__input form-page__input--with-icon input-text" type="email" id="email"
-                    value="kuklachev@gmail.com" placeholder="Введите ваш email" required />
+                    value="kuklachev@gmail.com" placeholder="Введите ваш email" required>
                   <svg class="form-page__input-icon" width="17" height="13">
                     <use xlink:href="img/sprite/sprite.svg#email"></use>
                   </svg>
@@ -132,7 +137,7 @@
                   <span class="form-page__input-name form-page__input-name--contacts input-text">Телефон:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
                   <input class="form-page__input form-page__input--with-icon input-text" type="tel" id="phone"
-                    name="phone" value="8 (960) 900-60-90" placeholder="Введите ваш email" required />
+                    name="phone" value="8 (960) 900-60-90" placeholder="Введите ваш email" required>
                   <svg class="form-page__input-icon" width="15" height="15">
                     <use xlink:href="img/sprite/sprite.svg#phone"></use>
                   </svg>
@@ -142,50 +147,56 @@
 
             <fieldset class="form-page__group form-page__group--commit">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title-container"><span
-                    class="form-page__group-title sub-title">Комментарий</span>
+                <h2 class="form-page__group-title-container">
+                  <span class="form-page__group-title sub-title">Комментарий</span>
                 </h2>
               </legend>
               <label>
                 <span class="visually-hidden">Комментарий в свободной форме.</span>
                 <!--Добавить к texarea класс has-error, чтобы увидеть ошибку-->
                 <textarea class="form-page__input form-page__input--textarea input-text" id="additional-text"
-                  name="additional-text" placeholder="Расскажите обо всех повадках кота"></textarea></label>
+                  name="additional-text" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
             </fieldset>
 
             <fieldset class="form-page__group form-page__group--additional">
               <legend class="form-page__legend">
-                <h2 class="form-page__group-title-container"><span
-                    class="form-page__group-title sub-title">Дополнительно</span></h2>
+                <h2 class="form-page__group-title-container">
+                  <span class="form-page__group-title sub-title">Дополнительно</span>
+                </h2>
               </legend>
               <ul class="form-page__list form-page__list--column">
                 <li class="form-page__item-checkbox choice">
                   <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options"
-                      id="sweetener" value="Сахарозаменитель" checked />
+                      id="sweetener" value="Сахарозаменитель" checked>
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Сахарозаменитель</span></label>
+                    <span class="choice__name input-text">Сахарозаменитель</span>
+                  </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
                   <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="water"
-                      value="Питьевая вода" />
+                      value="Питьевая вода">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Питьевая вода</span></label>
+                    <span class="choice__name input-text">Питьевая вода</span>
+                  </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
                   <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="milk"
-                      value="Молоко" />
+                      value="Молоко">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Молоко</span></label>
+                    <span class="choice__name input-text">Молоко</span>
+                  </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
                   <label class="choice__label choice__label--checkbox">
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="vitamins"
-                      value="Витамины" />
+                      value="Витамины">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Витамины</span></label>
+                    <span class="choice__name input-text">Витамины</span>
+                  </label>
                 </li>
               </ul>
             </fieldset>
@@ -194,9 +205,7 @@
               <button class="form-page__submit-button button" type="submit">
                 Отправить заявку
               </button>
-              <p class="form-page__submit-description text">
-                * &mdash; Обязательные поля
-              </p>
+              <p class="form-page__submit-description text"> * &mdash; Обязательные поля</p>
             </div>
           </form>
         </div>
@@ -208,8 +217,9 @@
           <div class="map__description-container">
             <div class="map__description-wrapper">
               <p class="map__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-              <address class="map__address text"><span class="map__address-street">ул. Большая Конюшенная, д.
-                  19/8</span><span class="map__adress-city">Санкт-Петербург</span>
+              <address class="map__address text">
+                <span class="map__address-street">ул. Большая Конюшенная, д. 19/8</span>
+                <span class="map__adress-city">Санкт-Петербург</span>
               </address>
             </div>
           </div>
@@ -223,7 +233,7 @@
           <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="map__image" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x"
-            alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8." width="320" height="362" />
+            alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8." width="320" height="362">
         </picture>
         <iframe class="map__iframe" title="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8."
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2376.731615266694!2d30.320462871803457!3d59.9390266245015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1676190226513!5m2!1sru!2sru"
@@ -276,7 +286,6 @@
       </div>
     </footer>
   </div>
-
   <script src="js/index.js"></script>
 </body>
 

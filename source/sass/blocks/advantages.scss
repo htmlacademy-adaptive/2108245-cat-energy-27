@@ -37,8 +37,19 @@
 
     grid-template-columns: 284px 324px;
     row-gap: 92px;
+  }
 
-    &::before {
+  @media (min-width: $vp-1024) {
+    padding-bottom: 0;
+
+    column-gap: calc(6% + 6px);
+
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+  }
+
+  &::before {
+    @media (min-width: $vp-768) {
       content: "";
       position: absolute;
       bottom: 0;
@@ -49,17 +60,8 @@
 
       background-color: $color-whisper-1;
     }
-  }
 
-  @media (min-width: $vp-1024) {
-    padding-bottom: 0;
-
-    column-gap: calc(6% + 6px);
-
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 40px;
-
-    &::before {
+    @media (min-width: $vp-1024) {
       display: none;
     }
   }
@@ -71,18 +73,22 @@
   min-height: 60px;
   padding-left: 80px;
 
+  @media (min-width: $vp-768) {
+    padding: 109px 60px 44px 0;
+
+    counter-increment: css-counter 1;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding-right: 0;
+  }
+
   &:not(:last-child) {
     margin-bottom: 20px;
 
     @media (min-width: $vp-768) {
       margin-bottom: 0;
     }
-  }
-
-  @media (min-width: $vp-768) {
-    padding: 109px 60px 44px 0;
-
-    counter-increment: css-counter 1;
   }
 
   &::after {
@@ -100,13 +106,9 @@
     }
 
     @media (min-width: $vp-1024) {
-      left: unset;
       right: 0;
+      left: unset;
     }
-  }
-
-  @media (min-width: $vp-1024) {
-    padding-right: 0;
   }
 
   &::before {
@@ -124,6 +126,7 @@
 
     @media (min-width: $vp-768) {
       top: -2px;
+
       width: 79px;
       height: 80px;
     }
@@ -135,8 +138,8 @@
 
   &--leaf::after {
     @media (min-width: $vp-1024) {
-      left: unset;
       right: 8%;
+      left: unset;
     }
   }
 

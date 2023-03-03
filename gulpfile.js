@@ -14,7 +14,7 @@ import browser from 'browser-sync';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())
     .pipe(sass().on('error', sass.logError))
@@ -22,10 +22,10 @@ export const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename ('style.min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
-    }
+}
 
 // HTML
 
@@ -59,7 +59,7 @@ const copyImages = () => {
 // WebP
 
 const createWebp = () => {
-  return gulp.src('source/img/**/*.{jpg,png}')
+  return gulp.src('source/img/**/*.{jpg,png}', '!source/img/favicons/*.{jpg,png}')
   .pipe(squoosh({
     webp: {}
   }))

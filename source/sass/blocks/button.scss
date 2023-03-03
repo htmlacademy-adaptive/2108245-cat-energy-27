@@ -28,12 +28,14 @@
 
   &:active,
   &:focus {
-    background-color: $color-limeade;
     color: rgba($color-default-white, 0.3);
+
+    background-color: $color-limeade;
   }
 
   &:disabled {
     opacity: 0.3;
+
     pointer-events: none;
   }
 }
@@ -61,12 +63,14 @@
 
   &:active,
   &:focus {
-    background-color: $color-whisper-3;
     color: rgba($color-default-black, 0.3);
+
+    background-color: $color-whisper-3;
   }
 
   &:disabled {
     opacity: 0.3;
+
     pointer-events: none;
   }
 }

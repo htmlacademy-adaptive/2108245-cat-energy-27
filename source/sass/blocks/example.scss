@@ -1,6 +1,7 @@
 .example {
   padding: 25px 0 40px 0;
   overflow: hidden;
+
   background-color: $color-whisper-2;
 
   @media (min-width: $vp-768) {
@@ -25,8 +26,9 @@
 
   @media (min-width: $vp-1024) {
     display: grid;
-    grid-template-columns: 1fr 560px;
+
     gap: 10px;
+    grid-template-columns: 1fr 560px;
   }
 }
 
@@ -57,10 +59,13 @@
 .example__content-wrapper {
   @media (min-width: $vp-1024) {
     position: relative;
+
     max-width: 446px;
     padding: 70px 2% 74px 0;
+  }
 
-    &::before {
+  &::before {
+    @media (min-width: $vp-1024) {
       content: "";
       position: absolute;
       top: 0;
@@ -79,9 +84,9 @@
   margin-bottom: 20px;
 
   @media (min-width: $vp-768) {
+    max-width: unset;
     margin: 0;
     margin-bottom: 54px;
-    max-width: unset;
   }
 
   @media (min-width: $vp-1024) {
@@ -116,13 +121,14 @@
     width: 100%;
     max-width: none;
     margin: 0;
-    gap: 8%;
 
+    gap: 8%;
     grid-template-columns: repeat(auto-fill, 162px);
   }
 
   @media (min-width: $vp-1024) {
     margin-bottom: 20px;
+
     gap: 10%;
   }
 }
@@ -144,8 +150,8 @@
   line-height: 12px;
   font-family: $ff-lato;
   text-align: center;
-  text-transform: lowercase;
   color: $color-charcoal;
+  text-transform: lowercase;
 
   background-color: $color-whisper-2;
   transform: translateY(-9px);
@@ -154,41 +160,42 @@
     width: max-content;
     max-width: 146px;
     padding: 9px;
-    transform: translateY(-16px);
 
     font-size: 14px;
     line-height: 14px;
 
     background-color: $color-default-white;
+    transform: translateY(-16px);
   }
 
   @media (min-width: $vp-1024) {
-    background-color: $color-whisper-2;
     padding: 9px 6%;
+
+    background-color: $color-whisper-2;
   }
 }
 
 .example__definition {
+  width: 100%;
   margin: 0;
+  padding: 13px 14px 17px 14px;
 
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   font-family: $ff-oswald;
+  text-align: center;
   color: $color-default-black;
   text-transform: uppercase;
-  width: 100%;
-  text-align: center;
-
-  padding: 13px 14px 17px 14px;
 
   border: 1px solid $color-very-light-grey;
   border-radius: 3px;
 
   @media (min-width: $vp-768) {
+    padding: 15px 14px 18px 14px;
+
     font-size: 30px;
     line-height: 37px;
-    padding: 15px 14px 18px 14px;
   }
 
   @media (min-width: $vp-1024) {
@@ -250,7 +257,8 @@
   }
 
   @media (min-width: $vp-1024) {
-    margin: 1px 0 0 auto;
+    margin: 1px 0 85px auto;
+    align-self: flex-end;
   }
 
   &::before {

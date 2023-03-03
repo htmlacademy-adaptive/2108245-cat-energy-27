@@ -57,6 +57,7 @@
   & .form-page__group {
     @media (min-width: $vp-1024) {
       margin-bottom: 0;
+      align-self: flex-start;
     }
   }
 }
@@ -85,12 +86,12 @@
   &--user-goal {
     position: relative;
 
-    padding: 22px 0 19px 0;
     margin-bottom: 26px;
+    padding: 22px 0 19px 0;
 
     @media (min-width: $vp-768) {
-      padding: 25px 28px;
       margin-bottom: 73px;
+      padding: 25px 28px;
 
       border: 1px solid $color-gainsboro;
     }
@@ -176,17 +177,18 @@
 
 .form-page__label {
   position: relative;
+
   display: flex;
 }
 
 .form-page__input-name {
+  max-width: calc(50% - 14px);
   margin-right: 14px;
   padding-top: 14px;
-  max-width: calc(50% - 14px);
 
   @media (min-width: $vp-768) {
-    padding-top: 10px;
     max-width: unset;
+    padding-top: 10px;
   }
 
   &--contacts {
@@ -200,13 +202,14 @@
 
 .form-page__input {
   flex-grow: 1;
-  padding: 14px 20px 13px 20px;
-  margin-bottom: auto;
   width: calc(50% - 14px);
+  margin-bottom: auto;
+  padding: 14px 20px 13px 20px;
 
   color: $color-charcoal;
 
   border: 1px solid $color-whisper-4;
+  outline: none;
 
   @media (min-width: $vp-768) {
     padding: 10px 20px;
@@ -228,8 +231,8 @@
     resize: none;
 
     @media (min-width: $vp-768) {
-      padding: 9px 19px;
       height: 173px;
+      padding: 9px 19px;
     }
   }
 
@@ -239,8 +242,9 @@
 
   &:active,
   &:focus {
-    border: 2px solid $color-charcoal;
     padding: 13px 19px 12px 19px;
+
+    border: 2px solid $color-charcoal;
 
     @media (min-width: $vp-768) {
       padding: 9px 19px;
@@ -248,17 +252,22 @@
   }
 
   &.has-error {
-    border: 2px solid $color-light-coral;
     padding: 9px 19px;
+
+    border: 2px solid $color-light-coral;
   }
 
   &--with-icon:active,
   &--with-icon:focus,
   &--with-icon.has-error {
-    padding: 13px 49px 12px 12px;
+    padding: 13px 50px 12px 12px;
 
     @media (min-width: $vp-768) {
-      padding: 10px 49px 8px 18px;
+      padding: 10px 50px 8px 18px;
+    }
+
+    @media (min-width: $vp-1024) {
+      padding: 10px 50px 8px 18px;
     }
   }
 
@@ -274,18 +283,22 @@
 
 
   &:disabled {
-    pointer-events: none;
     opacity: 0.3;
+
+    pointer-events: none;
   }
 }
 
 .form-page__input-icon {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   right: 18px;
-  pointer-events: none;
+
   color: $color-nero;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
 
   @media (min-width: $vp-1024) {
     right: 20px;
@@ -342,10 +355,10 @@
 
 .form-page__legend {
   display: flex;
+  width: 100%;
   margin: 0;
   margin-bottom: 35px;
   padding: 0;
-  width: 100%;
 
   @media (min-width: $vp-768) {
     margin-bottom: 76px;
@@ -359,8 +372,8 @@
 }
 
 .form-page__group-title-container {
-  margin: 0;
   width: 100%;
+  margin: 0;
 }
 
 .form-page__group-title {
@@ -412,8 +425,8 @@
     transform: translateY(-50%);
 
     @media (min-width: $vp-768) {
-      left: -100vw;
       top: 23px;
+      left: -100vw;
 
       width: 200vw;
     }
@@ -445,12 +458,14 @@
 
 .form-page__submit-button {
   margin-bottom: 21px;
+
   font-size: $fz-default;
 
   @media (min-width: $vp-768) {
     margin-bottom: 0;
-    font-size: 20px;
     padding: 16px 26px;
+
+    font-size: 20px;
   }
 
   @media (min-width: $vp-1024) {

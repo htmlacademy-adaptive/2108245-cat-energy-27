@@ -3,14 +3,14 @@
 <rect width="27" height="34" fill="white"/>
 </clipPath>
 </defs><symbol id="email" viewBox="0 0 18 14">
-<path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<path d="M0.5 5.5V13.5H17.5V5.5M0.5 0.5H17.5V2.5L9 8.5L0.5 2.5V0.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="logo_academy" viewBox="0 0 27 34">
 <g clip-path="url(#clip0_92242_330)">
 <path d="M13.6426 0.0157537L13.5 0L0 1.40733V26.0129L13.5 34L27 26.0129V1.40733L13.6426 0.0157537ZM25.2344 25.0151L13.5 31.9573L1.76561 25.0151V14.9293L13.4507 21.8451L13.4701 23.0984L5.45351 18.3548L5.44295 19.5801L13.4894 24.3885L13.5088 25.675L5.46408 20.9174L5.45351 22.1427L13.5 26.9511L21.6239 22.1182V20.8929V16.909L25.2432 14.7595L25.2344 25.0151ZM25.2344 13.4519L22.0147 15.3319L20.5325 16.2071L13.4666 12.0201L13.456 13.2454L19.4957 16.818L19.4429 16.8495L19.3126 16.9247L18.4536 17.4166L13.4666 14.4689L13.456 15.6942L17.3921 18.0222L16.4591 18.6314L16.438 18.6436L13.4666 16.902L13.456 18.1273L15.4029 19.2615L13.4155 20.4483L1.7973 13.5762L13.4349 6.61831L25.2344 13.4519ZM25.2344 12.2266L13.4401 5.31075L1.76561 12.2196V2.9897L13.5 1.76442L25.2344 2.9897V12.2266Z" fill="currentColor"/>
 </g>
 
 </symbol><symbol id="phone" viewBox="0 0 16 16">
-<path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+<path d="M7 8H15.5M15.5 8L13 5.5M15.5 8L13 10.5M5.5 0.5V5.5H2.5V10.5H5.5V15.5H3C1.5 15.5 0.5 14.5 0.5 13V3C0.5 1.5 1.5 0.5 3 0.5H5.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="scroller" viewBox="0 0 40 40">
 <rect x="1" y="1" width="38" height="38" rx="19" fill="white"/>
 <path d="M16 11L8 20L16 29V11Z" fill="currentColor"/>

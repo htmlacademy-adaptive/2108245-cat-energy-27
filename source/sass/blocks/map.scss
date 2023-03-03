@@ -1,8 +1,9 @@
 .map {
   position: relative;
 
-  background-color: $color-white-smoke;
   min-height: 474px;
+
+  background-color: $color-white-smoke;
 
   @media (min-width: $vp-768) {
     min-height: 598px;
@@ -10,6 +11,7 @@
 
   @media (min-width: $vp-1024) {
     min-height: 400px;
+
     background-color: $color-apple;
   }
 
@@ -22,6 +24,7 @@
 
     @media (min-width: $vp-1024) {
       background-color: $color-apple;
+      min-height: 400px;
     }
   }
 }
@@ -39,11 +42,11 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  max-width: 500px;
   margin: 0 auto;
   padding: 26px 0;
 
   background-color: $color-white-smoke;
-  max-width: 500px;
 
   @media (min-width: $vp-768) {
     max-width: 1220px;
@@ -55,9 +58,10 @@
     z-index: 3;
 
     max-width: 565px;
-    padding: 56px 80px 60px 80px;
-    background-color: $color-default-white;
     margin: 0 auto 0 0;
+    padding: 56px 80px 60px 80px;
+
+    background-color: $color-default-white;
   }
 
   .map--index & {
@@ -180,6 +184,6 @@
     left: 0;
 
     height: 100%;
-    max-height: none;
+    max-height: unset;
   }
 }

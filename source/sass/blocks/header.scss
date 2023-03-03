@@ -82,8 +82,8 @@
   }
 
   &--text {
-    align-self: flex-start;
     display: flex;
+    align-self: flex-start;
     padding-top: 9px;
 
     @media (min-width: $vp-768) {
@@ -98,10 +98,10 @@
   height: 30px;
   margin-left: auto;
   padding: 5px 3px;
-  transform: translateX(3px) translateY(3px);
 
   background-color: transparent;
   border: none;
+  transform: translateX(3px) translateY(3px);
   cursor: pointer;
 
   .no-js & {
@@ -220,12 +220,12 @@
   }
 
   @media (min-width: $vp-1024) {
+    min-width: 477px;
     margin-left: auto;
 
     font-size: 20px;
     line-height: 30px;
     column-gap: 7%;
-    min-width: 477px;
   }
 
   .no-js & {
@@ -299,21 +299,13 @@
 
   &:active {
     @media (min-width: $vp-768) {
-      opacity: 1;
-      border-bottom: 2px solid $color-apple;
+      opacity: 0.3;
     }
 
     @media (min-width: $vp-1024) {
-      opacity: 1;
-      border-color: $color-default-white;
+      opacity: 0.3;
     }
   }
-
-  &:disabled {
-    opacity: 0.3;
-    pointer-events: none;
-  }
-
 
   &--current {
     pointer-events: none;

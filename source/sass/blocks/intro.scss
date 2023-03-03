@@ -20,9 +20,10 @@
   }
 
   @media (min-width: $vp-1024) {
+    z-index: unset;
+
     width: 50%;
     padding: 79px 1% 53px 79px;
-    z-index: unset;
   }
 
 
@@ -115,6 +116,7 @@
   @media (min-width: $vp-1024) {
     position: relative;
     z-index: 2;
+
     max-width: 470px;
   }
 }
@@ -156,10 +158,10 @@
     position: absolute;
     top: 0;
     left: 448px;
-    max-width: 552px;
     z-index: 1;
 
     width: 50%;
+    max-width: 552px;
     height: auto;
     margin: 0;
   }
