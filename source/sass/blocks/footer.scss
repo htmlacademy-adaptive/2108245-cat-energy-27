@@ -23,7 +23,7 @@
     display: grid;
 
     gap: 20px;
-    grid-template-columns: 170px auto 170px;
+    grid-template-columns: 1fr auto 1fr;
   }
 }
 
@@ -85,6 +85,12 @@
   transform: translateX(11px);
 
   @media (min-width: $vp-768) {
+    max-width: 300px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $vp-1024) {
+    max-width: 452px;
     padding-top: 10px;
   }
 }
@@ -127,6 +133,10 @@
 
   pointer-events: none;
 
+  @media (min-width: $vp-768) {
+    justify-content: flex-end;
+  }
+
   &:active,
   &:focus {
     opacity: 0.3;
@@ -137,6 +147,10 @@
   padding-top: 8px;
 
   pointer-events: all;
+
+  @media (min-width: $vp-768) {
+    margin-right: 28px;
+  }
 }
 
 .footer__academy-icon {

@@ -56,8 +56,8 @@
 
   & .form-page__group {
     @media (min-width: $vp-1024) {
-      margin-bottom: 0;
       align-self: flex-start;
+      margin-bottom: 0;
     }
   }
 }
@@ -213,6 +213,12 @@
 
   @media (min-width: $vp-768) {
     padding: 10px 20px;
+  }
+
+  &::placeholder {
+    color: $color-charcoal;
+
+    opacity: 1;
   }
 
   &--with-icon {

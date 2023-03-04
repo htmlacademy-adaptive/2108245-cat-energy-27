@@ -148,11 +148,12 @@
 
 .catalog__product-image {
   display: block;
-  margin: auto;
+  margin: 6px auto 0 auto;
 
   @media (min-width: $vp-768) {
     display: block;
     width: 100%;
+    margin: auto;
   }
 
   @media (min-width: $vp-1024) {
