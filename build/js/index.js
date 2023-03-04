@@ -1,1 +1,0 @@
-const header=document.querySelector(".header"),navToggle=document.querySelector(".header__nav-toggle");header.classList.remove("no-js"),navToggle.addEventListener("click",(()=>header.classList.toggle("is-open"))),document.addEventListener("keydown",(e=>{"Escape"===e.key&&header.classList.remove("is-open")}));
