@@ -1,0 +1,35 @@
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  min-width: $vp-320;
+  min-height: 100%;
+  margin: 0;
+
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 21px;
+  font-family: $ff-oswald;
+  color: $color-default-black;
+
+  background-color: $color-default-white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}

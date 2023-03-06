@@ -1,0 +1,47 @@
+.main-content__programs {
+  margin-bottom: 20px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 71px;
+  }
+}
+
+.main-content__advantages {
+  margin-bottom: 49px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 82px;
+  }
+}
+
+.main-content__catalog {
+  margin-bottom: 25px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 72px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 80px;
+  }
+}
+
+.main-content__sub-catalog {
+  margin-bottom: 35px;
+
+  @media (min-width: $vp-768) {
+    margin-bottom: 76px;
+  }
+
+  @media (min-width: $vp-1024) {
+    margin-bottom: 0;
+  }
+}

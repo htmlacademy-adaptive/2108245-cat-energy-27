@@ -1,0 +1,76 @@
+.button {
+  display: block;
+  padding: 11px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-apple;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $vp-768) {
+    padding: 10px 26px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  &:hover {
+    background-color: $color-limeade;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($color-default-white, 0.3);
+
+    background-color: $color-limeade;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+}
+
+.button-pagination {
+  display: block;
+  padding: 10px;
+
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 20px;
+  font-family: $ff-oswald;
+  text-align: center;
+  color: $color-charcoal;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-white-smoke;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-whisper-3;
+  }
+
+  &:active,
+  &:focus {
+    color: rgba($color-default-black, 0.3);
+
+    background-color: $color-whisper-3;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+
+    pointer-events: none;
+  }
+}

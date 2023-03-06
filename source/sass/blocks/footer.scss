@@ -1,0 +1,166 @@
+.footer {
+  width: 100%;
+  margin-top: auto;
+  padding: 40px 0;
+
+  background-color: $color-white-smoke;
+
+  @media (min-width: $vp-768) {
+    padding: 55px 0;
+  }
+
+  @media (min-width: $vp-1024) {
+    padding: 65px 0;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $vp-768) {
+    display: grid;
+
+    gap: 20px;
+    grid-template-columns: 1fr auto 1fr;
+  }
+}
+
+.footer__logo-link {
+  display: flex;
+  width: 100%;
+
+  color: $color-default-black;
+  text-decoration: none;
+
+  @media (min-width: $vp-768) {
+    padding-top: 6px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.6;
+  }
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto 20px auto;
+
+  @media (min-width: $vp-768) {
+    width: 143px;
+    margin: 0 auto auto 0;
+  }
+}
+
+.footer__social-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+
+  border-top: 1px solid $color-gainsboro;
+  border-bottom: 1px solid $color-gainsboro;
+
+  @media (min-width: $vp-768) {
+    margin: 0;
+
+    border: none;
+  }
+}
+
+.footer__social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  align-self: center;
+  margin: 0 auto -15px auto;
+  padding: 22px 15px 16px 15px;
+
+  list-style-type: none;
+
+  transform: translateX(11px);
+
+  @media (min-width: $vp-768) {
+    max-width: 300px;
+    padding-top: 10px;
+  }
+
+  @media (min-width: $vp-1024) {
+    max-width: 452px;
+    padding-top: 10px;
+  }
+}
+
+.footer__social-item {
+  display: flex;
+  align-items: center;
+  margin-right: 26px;
+  margin-bottom: 15px;
+}
+
+
+.footer__social-link {
+  display: block;
+
+  color: $color-dim-gray;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-apple;
+  }
+
+  &:active,
+  &:focus {
+    color: $color-apple;
+
+    opacity: 0.3;
+  }
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 19px;
+  font-family: $ff-lato;
+  color: $color-charcoal;
+
+  pointer-events: none;
+
+  @media (min-width: $vp-768) {
+    justify-content: flex-end;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.footer__copyright-academy {
+  padding-top: 8px;
+
+  pointer-events: all;
+
+  @media (min-width: $vp-768) {
+    margin-right: 28px;
+  }
+}
+
+.footer__academy-icon {
+  color: $color-dim-gray;
+
+  pointer-events: all;
+}
+
+.footer__copyright:hover .footer__academy-icon,
+.footer__copyright:focus .footer__academy-icon,
+.footer__copyright:active .footer__academy-icon {
+  color: $color-apple;
+}
