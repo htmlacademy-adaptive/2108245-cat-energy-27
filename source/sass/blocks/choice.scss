@@ -35,13 +35,12 @@
 
   &:focus .choice__radio,
   &:focus .choice__checkbox {
-    border-color: $color-silver;
+    border-color: $color-default-black;
   }
 
   &:active .choice__radio,
   &:active .choice__checkbox {
     border-color: $color-silver;
-    outline: none;
   }
 }
 
@@ -135,5 +134,5 @@
 
 .choice__input:focus + .choice__radio,
 .choice__input:focus + .choice__checkbox {
-  border: 1px solid $color-silver;
+  border: 1px solid $color-default-black;
 }
