@@ -64,21 +64,21 @@
               <fieldset class="form-page__group">
                 <legend class="visually-hidden">Введите данные вашего кота.</legend>
                 <label class="form-page__label">
-                  <span class="form-page__input-name input-text">Имя:*</span>
+                  <span class="form-page__input-name text--input">Имя:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
-                  <input class="form-page__input input-text" type="text" id="cat-name" value="Барсик"
+                  <input class="form-page__input text--input" type="text" id="cat-name" value="Барсик"
                     placeholder="Введите имя кота" required>
                 </label>
                 <label class="form-page__label">
-                  <span class="form-page__input-name input-text">Вес (кг):*</span>
+                  <span class="form-page__input-name text--input">Вес (кг):*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
-                  <input class="form-page__input input-text" type="text" id="cat-weight" value="7"
+                  <input class="form-page__input text--input" type="text" id="cat-weight" value="7"
                     placeholder="Введите вес кота" required>
                 </label>
                 <label class="form-page__label">
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
-                  <span class="form-page__input-name input-text">Возраст&nbsp;(лет):</span>
-                  <input class="form-page__input input-text" type="text" id="cat-age" value="7"
+                  <span class="form-page__input-name text--input">Возраст&nbsp;(лет):</span>
+                  <input class="form-page__input text--input" type="text" id="cat-age" value="7"
                     placeholder="Введите возраст кота" required>
                 </label>
               </fieldset>
@@ -93,7 +93,7 @@
                       <input class="visually-hidden choice__input" type="radio" id="slimming" name="user-goal"
                         value="Похудение" checked>
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Похудение</span>
+                      <span class="choice__name text--input">Похудение</span>
                     </label>
                   </li>
                   <li class="form-page__item-radio choice">
@@ -101,7 +101,7 @@
                       <input class="visually-hidden choice__input" type="radio" id="weight-gain" name="user-goal"
                         value="Набор массы">
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Набор массы</span>
+                      <span class="choice__name text--input">Набор массы</span>
                     </label>
                   </li>
                   <li class="form-page__item-radio choice">
@@ -109,7 +109,7 @@
                       <input class="visually-hidden choice__input" type="radio" id="need-consultation" name="user-goal"
                         value="Не знаю (нужен ваш совет)">
                       <span class="choice__radio"></span>
-                      <span class="choice__name input-text">Не знаю (нужен ваш совет)</span>
+                      <span class="choice__name text--input">Не знаю (нужен ваш совет)</span>
                     </label>
                   </li>
                 </ul>
@@ -126,18 +126,18 @@
               </legend>
               <div class="form-page__inputs-wrapper">
                 <label class="form-page__label">
-                  <span class="form-page__input-name form-page__input-name--contacts input-text">E-mail:*</span>
+                  <span class="form-page__input-name form-page__input-name--contacts text--input">E-mail:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
-                  <input class="form-page__input form-page__input--with-icon input-text" type="email" id="email"
+                  <input class="form-page__input form-page__input--with-icon text--input" type="email" id="email"
                     value="kuklachev@gmail.com" placeholder="Введите ваш email" required>
                   <svg class="form-page__input-icon" width="17" height="13">
                     <use xlink:href="img/sprite/sprite.svg#email"></use>
                   </svg>
                 </label>
                 <label class="form-page__label" for="phone">
-                  <span class="form-page__input-name form-page__input-name--contacts input-text">Телефон:*</span>
+                  <span class="form-page__input-name form-page__input-name--contacts text--input">Телефон:*</span>
                   <!--Добавить к инпуту класс has-error, чтобы увидеть ошибку-->
-                  <input class="form-page__input form-page__input--with-icon input-text" type="tel" id="phone"
+                  <input class="form-page__input form-page__input--with-icon text--input" type="tel" id="phone"
                     name="phone" value="8 (960) 900-60-90" placeholder="Введите номер телефона" required>
                   <svg class="form-page__input-icon" width="15" height="15">
                     <use xlink:href="img/sprite/sprite.svg#phone"></use>
@@ -155,7 +155,7 @@
               <label>
                 <span class="visually-hidden">Комментарий в свободной форме.</span>
                 <!--Добавить к texarea класс has-error, чтобы увидеть ошибку-->
-                <textarea class="form-page__input form-page__input--textarea input-text" id="additional-text"
+                <textarea class="form-page__input form-page__input--textarea text--input" id="additional-text"
                   name="additional-text" placeholder="Расскажите обо всех повадках кота"></textarea>
               </label>
             </fieldset>
@@ -172,7 +172,7 @@
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options"
                       id="sweetener" value="Сахарозаменитель" checked>
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Сахарозаменитель</span>
+                    <span class="choice__name text--input">Сахарозаменитель</span>
                   </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
@@ -180,7 +180,7 @@
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="water"
                       value="Питьевая вода">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Питьевая вода</span>
+                    <span class="choice__name text--input">Питьевая вода</span>
                   </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
@@ -188,7 +188,7 @@
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="milk"
                       value="Молоко">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Молоко</span>
+                    <span class="choice__name text--input">Молоко</span>
                   </label>
                 </li>
                 <li class="form-page__item-checkbox choice">
@@ -196,7 +196,7 @@
                     <input class="visually-hidden choice__input" type="checkbox" name="additional-options" id="vitamins"
                       value="Витамины">
                     <span class="choice__checkbox"></span>
-                    <span class="choice__name input-text">Витамины</span>
+                    <span class="choice__name text--input">Витамины</span>
                   </label>
                 </li>
               </ul>
