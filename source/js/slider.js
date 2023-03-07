@@ -19,9 +19,9 @@ document.body.addEventListener('mousemove',function(e){
 function scrollIt(x){
     let transform = Math.max(0,(Math.min(x,document.querySelector('.example__comparison').offsetWidth)));
     let widthBefore = document.querySelector('.example__comparison').offsetWidth - transform;
-    document.querySelector('.example__image-container--after').style.width = transform+"px";
-    document.querySelector('.example__image-container--before').style.width = widthBefore+"px";
-    document.querySelector('.example__slider').style.left = transform-20+"px";
+    document.querySelector('.example__image-container--after').style.width = transform+'px';
+    document.querySelector('.example__image-container--before').style.width = widthBefore+'px';
+    document.querySelector('.example__slider').style.left = transform-20+'px';
 }
 
 scrollIt(document.querySelector('.example__comparison').offsetWidth / 2);
